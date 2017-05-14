@@ -23,7 +23,6 @@
     #about-content-desktop #text-col {
         min-height: 70vh;
         max-height: 80vh;
-        /*margin-left: -1vw;*/
         margin-bottom: 20px;
 
         padding-top: 3.8vmax;
@@ -40,6 +39,7 @@
         font-size: 120%;
         text-align: left;
         font-family: 'Roboto', sans-serif;
+        font-weight: 300;
     }
 
 #about-content-mobile {
@@ -69,6 +69,7 @@
     #about-content-mobile .about-p {
         font-size: 15px;
         font-family: 'Roboto', sans-serif;
+        font-weight: 300;
         text-align: center;
     }
 
