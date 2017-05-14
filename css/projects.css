@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*HTML, BODY {
+  height: 100%; }*/
+
+body {
+    padding-top: 80px;
+    font-family: 'Roboto', sans-serif;
+
+    background: #d4d9df; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, #d4d9df, #f1f1f1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #d4d9df, #f1f1f1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #d4d9df, #f1f1f1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to left, #d4d9df , #f1f1f1); /* Standard syntax */
+}
+
+#navbar {
+    background-color: transparent;
+    border: none;
+}
+
+#proj-header {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.proj-subheader {
+    text-align: center;
+    padding: 20px;
+}
+.proj-subheader a {
+    color: gray;
+    text-decoration: none;
+}
+.proj-subheader a:hover {
+    color: #352F2F;
+}
+
+#proj-icons {
+    padding-top: 20px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.square {
+    height: auto;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: white;
+}

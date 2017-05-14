@@ -1,0 +1,77 @@
+@charset "UTF-8";
+HTML, BODY {
+  height: 100%; 
+}
+
+body {
+  height: 100%;
+  color: #352F2F;
+}
+
+/***** NAVIGATION BAR *****/
+#navbar {
+    position: absolute;
+    padding-top: 10px;
+    height: 70px;
+    color: #352F2F;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+    .watermark {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        max-width: 40px;
+        opacity: 0.8;
+    }
+    #navTabs li a {
+        font-family: 'Roboto Condensed', sans-serif;
+        color: #352F2F;
+        text-align: center;
+        padding-right: 10px;
+    }
+    #navTabs  {
+        font-size: 2vmax;
+    }
+
+@media (min-width: 768px){
+    #navTabs {
+        float: none;
+        margin: 0 auto;
+        text-align: right;
+    }
+}
+
+@media (max-width:767px) {
+  #navTabs{
+    margin-top: 0px;
+  }
+  #navTabs li a {
+    width: 100vw;
+    background-color: white;
+  }
+  #navTabs li a:hover {
+    background-color: lightgray;
+  }
+}
+
+/***** SECTIONING OF PAGE *****/
+#home { width: 100vw; height: 100vh; }
+#about {
+    width: 100vw;
+    min-height: 100vh;
+}
+#projects {
+    width: 100vw;
+    min-height: 100vh;
+    background: black;
+}
+
+@media (max-width: 414px){
+  #navTabs  {
+        font-size: 2vmax;
+    }
+}
+  
+@media (max-width: 375px){
+}
