@@ -21,14 +21,15 @@
     font-weight: 300;
 }
     #about-content-desktop #text-col {
-        min-height: 70vh;
-        max-height: 80vh;
+        min-height: 60vh;
+        max-height: 70vh;
         margin-bottom: 20px;
+        margin-left: 20px;
 
         padding-top: 3.8vmax;
         padding-right: 4.2vmax;
-        padding-bottom: 3.9vmax;
-        padding-left: 4.2vmax;
+        padding-bottom: 3.8vmax;
+        padding-left: 4.5vmax;
     }
     #about-content-desktop #text-col h2 {
         margin-top: 0;
@@ -36,7 +37,7 @@
         font-size: 300%;
     }
     #about-content-desktop .about-p {
-        font-size: 120%;
+        font-size: 110%;
         text-align: left;
         font-family: 'Roboto', sans-serif;
         font-weight: 300;

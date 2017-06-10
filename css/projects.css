@@ -22,8 +22,15 @@ body {
 #proj-header {
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
-    font-size: 40px;
-    padding-top: 20px;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*padding-top: 40px;*/
+    /*padding-bottom: 40px;*/
+    /*width: 255px;*/
+    /*background-color: white;*/
+    /*border-bottom: 5px solid #352F2F;*/
 }
 
 .proj-subheader {
@@ -31,11 +38,18 @@ body {
     padding: 20px;
 }
 .proj-subheader a {
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    font-size: 22px;
+    font-weight: 300;
     color: gray;
+    /*color: #352F2F;*/
     text-decoration: none;
+    padding-bottom: 3px;
 }
 .proj-subheader a:hover {
-    color: #352F2F;
+    /*color: #f49652;*/
+    /*border-bottom: 3px solid #335e96;*/
+    color: #0d53ad;
 }
 
 #proj-icons {
@@ -48,5 +62,15 @@ body {
     height: auto;
     width: 100%;
     padding-bottom: 100%;
-    background-color: white;
+    /*background-color: white;*/
+}
+#ancr-gui {
+    background-image: url('../images/projects/ancr1.png');
+    background-size: cover;
+    background-position: center center;
+}
+#beamed {
+    background-image: url('../images/projects/beamed1.png');
+    background-size: cover;
+    background-position: top center;
 }
