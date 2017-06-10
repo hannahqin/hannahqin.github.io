@@ -64,6 +64,7 @@
     }
     #about-content-mobile h2 {
         text-align: left;
+        padding-bottom: 5px;
     }
     #about-content-mobile .about-p {
         font-size: 15px;
