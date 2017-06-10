@@ -80,6 +80,7 @@
         padding-top: 2px;
     }
     #learnmore {
+        top: 64vh;
         width: 30vmax;
         margin-left: calc(-30vmax/2);
         font-size: 3vmax;
