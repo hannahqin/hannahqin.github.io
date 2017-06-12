@@ -1,0 +1,82 @@
+/* ------ NAVIGATION BAR ------ */
+#navbar-top  {
+    position: fixed;
+    padding-top: 30px;
+    padding-right: 5px;
+    height: 70px;
+    color: #352F2F;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+    #navTabs li a {
+        margin-right: 35px;
+        padding: 0px;
+        padding-bottom: 3px;
+
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: black;
+        text-align: center;
+    }
+
+    #navTabs li a:hover, #navTabs li a:focus {
+        background-color: transparent;
+        border-bottom: 2px solid #4975e2;
+    }
+
+
+/* ------ VERTICAL ALIGN HEADER ------ */
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/* ------ HEADER ------ */
+#header {
+    padding-left: 6%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+    #header img {
+        max-width: 35%;
+    }
+
+    #header p {
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+        font-weight: 200;
+        font-size: 35px;
+        letter-spacing: 3px;
+        line-height: 45px;
+    }
+
+    #header #learnmore {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 32px;
+        text-align: center;
+
+        color: white;
+        background-color: #4975e2;
+        border-radius: 8px;
+    }
+
+    #header #learnmore:hover {
+        background-color: #2454c9;
+    }
