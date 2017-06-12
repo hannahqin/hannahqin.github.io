@@ -27,3 +27,14 @@
             font-size: 19px;
             text-align: left;
         }
+
+        #text-col a {
+            color: #4975e2;
+        }
+
+        #text-col a:hover {
+            text-decoration: none;
+            color: #4975e2;
+            border-bottom: 2px solid #4975e2;
+            cursor: pointer;
+        }
