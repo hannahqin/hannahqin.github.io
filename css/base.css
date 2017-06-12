@@ -5,6 +5,13 @@ body {
     color: black;
 }
 
+::selection {
+  background: #fff379; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fff379; /* Gecko Browsers */
+}
+
 #home { 
     width: 100vw; 
     height: 100vh;
@@ -29,21 +36,3 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
-
-/*.section {
-  width: 100vw;
-  margin-right, margin-right: 0px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-}
-    .section-header {
-        display: table;
-        height: 100vh;
-        vertical-align: middle;
-    }
-    .section-header h1 {
-        display: table-cell;
-        height: 100vh;
-        vertical-align: middle;
-        font-size: 4em;
-    }*/

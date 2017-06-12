@@ -1,59 +1,29 @@
-/*#about-wrapper {
-    background-color: #f8f8f8;
-    margin: 0px;
-}
-    #about-header {
-      background: #688ff2;
-      color: black;
-      text-align: center;
-    }
-    #about-text {
-        padding-left: 100px;
-        padding-right: 100px;
-        height: 100vh;
-        display: table;
-    }
-    .center-p {
-        vertical-align: middle;
-        display: table-cell;
-    }
-    .about-p {
-        width: 100%;
-        font-size: 20px;
-        text-align: left;
-        color: #352f2f;
-        vertical-align: middle;
-    }*/
-
 #about-content {
-  padding-top: 150px;
-  margin-left: 0px;
-  margin-right: 0px;
-  display: inline-block;
-  text-align: center;
+    padding-top: 150px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: inline-block;
+    text-align: center;
 }
-    #img-col {
-        display: inline-block;
+    #about-content #img-col {
         margin-left: auto;
         margin-right: auto;
     }
-    #about img {
-        padding-left: 10%;
-        padding-right: 10%;
-        display: inline-block;
-        max-width: 100%;
-        right: 0px;
-    }
-    .about-p {
-      width: 100%;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 300;
-      font-size: 19px;
-      text-align: left;
+        #img-col img {
+            max-height: 60vh;
+            right: 0px;
+        }
+
+    #about-content #text-col {
+        padding-left: 5%;
     }
 
-.valign {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
+        #text-col .about-p {
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 300;
+            font-size: 19px;
+            text-align: left;
+        }
