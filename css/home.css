@@ -11,34 +11,6 @@
     vertical-align: middle;
 }
 
-/* ------ NAVIGATION BAR ------ */
-#navbar-top  {
-    position: fixed;
-    padding-top: 30px;
-    padding-right: 5px;
-    height: 70px;
-    color: #352F2F;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    letter-spacing: 2px;
-}
-
-    #navTabs li a {
-        margin-right: 35px;
-        padding: 0px;
-        padding-bottom: 3px;
-
-        font-size: 15px;
-        letter-spacing: 1px;
-        color: black;
-        text-align: center;
-    }
-
-    #navTabs li a:hover, #navTabs li a:focus {
-        background-color: transparent;
-        border-bottom: 2px solid #4975e2;
-    }
-
 
 /* ------ HEADER ------ */
 #header {
@@ -104,9 +76,7 @@
   #header p {
     padding-top: 5px;
     padding-bottom: 12px;
-/*    font-size: 20px;*/
     font-size: 6.4vw;
-/*    line-height: 28px;*/
     line-height: 9vw;
     letter-spacing: 2.5px;
   }

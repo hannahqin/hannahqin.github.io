@@ -23,3 +23,56 @@ body {
   min-height: 100vh;
   background: #f8f8f8;
 }
+
+/* ------ NAVIGATION BAR ------ */
+#navbar-top  {
+    position: fixed;
+    padding-top: 30px;
+    padding-right: 5px;
+    height: 70px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+    #navTabs li a {
+        margin-right: 35px;
+        padding: 0px;
+        padding-bottom: 3px;
+
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: black;
+        text-align: center;
+    }
+
+    #navTabs li a:hover, #navTabs li a:focus {
+        background-color: transparent;
+        border-bottom: 2px solid #4975e2;
+    }
+.navbar-header .navbar-toggle {
+    margin-right: 8px;
+    margin-top: 5px;
+}
+.navbar-header .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    #navbar-top {
+        padding-top: 10px;
+    }
+
+    #navTabs {
+        margin-top: 0px;
+    }
+
+    #navTabs li a {
+        text-align: right;
+        margin-right: 18px;
+        padding: 3px 0px;
+    }
+}
+
+
