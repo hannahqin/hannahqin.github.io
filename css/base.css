@@ -23,16 +23,3 @@ body {
   min-height: 100vh;
   background: #f8f8f8;
 }
-
-/* ------ VERTICAL ALIGN ------ */
-.outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-}

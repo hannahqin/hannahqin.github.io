@@ -1,3 +1,16 @@
+/* ------ VERTICAL ALIGN ------ */
+.valign-outer-home {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.valign-inner-home {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 /* ------ NAVIGATION BAR ------ */
 #navbar-top  {
     position: fixed;
@@ -25,20 +38,6 @@
         background-color: transparent;
         border-bottom: 2px solid #4975e2;
     }
-
-
-/* ------ VERTICAL ALIGN HEADER ------ */
-.outer {
-    display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-}
-
-.middle {
-    display: table-cell;
-    vertical-align: middle;
-}
 
 
 /* ------ HEADER ------ */
@@ -80,3 +79,19 @@
     #header #learnmore:hover {
         background-color: #2454c9;
     }
+
+@media (max-width: 767px) {
+  #header img {
+    max-width: 50%;
+  }
+  #header p {
+    padding-top: 7px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #header #learnmore {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
