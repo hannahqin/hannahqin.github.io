@@ -82,14 +82,14 @@
 
 @media (max-width: 767px) {
     #about-content {
-        padding: 8vh 10vw;
+        padding: 7vh 1vw;
     }
 
     #about-content #img-col {
         height: auto;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 40px;
+        margin-bottom: 6vh;
     }
 
     #img-col img {
@@ -102,6 +102,6 @@
 
     #about-content #text-col p {
         text-align: center;
-        font-size: 2.6vw;
+        font-size: 3.6vw;
     }
 }
