@@ -4,9 +4,9 @@ $(document).ready(function() {
    {
      "particles": {
            "number": {
-               "value": 15,
+               "value": 50,
                "density": {
-                   "enable": true,
+                   "enable": false,
                    "value_area": 300
                }
            },
@@ -57,8 +57,8 @@ $(document).ready(function() {
                "enable": true,
                "distance": 200,
                // "color": "#4975e2",
-               "color": "#777",
-               "opacity": 0.5,
+               "color": "#666",
+               "opacity": 0.6,
                "width": 0.5
            },
 
