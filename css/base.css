@@ -6,10 +6,10 @@ body {
 }
 
 ::selection {
-  background: #fff379; /* WebKit/Blink Browsers */
+  background: #fff18c; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #fff379; /* Gecko Browsers */
+  background: #fff18c; /* Gecko Browsers */
 }
 
 #home { 
