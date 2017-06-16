@@ -4,10 +4,10 @@ $(document).ready(function() {
    {
      "particles": {
            "number": {
-               "value": 50,
+               "value": 60,
                "density": {
-                   "enable": false,
-                   "value_area": 300
+                   "enable": true,
+                   "value_area": 1200
                }
            },
 
