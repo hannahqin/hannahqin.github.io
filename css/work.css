@@ -1,0 +1,63 @@
+body {
+    width: 100vw; 
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ------ TEXT HIGHLIGHT COLOR ------ */
+::selection {
+  background: #fff18c; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #fff18c; /* Gecko Browsers */
+}
+
+
+/* ------ VERTICAL ALIGN ------ */
+.valign-outer {
+    display: table;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.valign-inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+}
+
+
+/* ------ MAIN BODY CONTENT ------ */
+.main-wrapper {
+    background-color: transparent;
+}
+
+.main-content {
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #4975e2 !important;
+}
+
+p {
+    color: black;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+a {
+    color: #4975e2;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 2px solid #4975e2;
+}
+
+
