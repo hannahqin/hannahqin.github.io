@@ -67,8 +67,19 @@
     }
 }
 
+@media (min-width: 1200px) {
+  #about-content {
+    max-width: 900;
+  }
+  #about-wrapper p {
+    font-size: 18px;
+  }
+  #img-col img {
+    height: 450px;
+  }
+}
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   #about-wrapper p {
     font-size: 1.4vw;
   }
