@@ -24,6 +24,19 @@ body {
   background: #f8f8f8;
 }
 
+/* ------ VERTICAL ALIGN ------ */
+.valign-outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.valign-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 /* ------ NAVIGATION BAR ------ */
 #navbar-top  {
     position: fixed;
@@ -74,5 +87,3 @@ body {
         padding: 3px 0px;
     }
 }
-
-

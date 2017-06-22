@@ -1,118 +1,126 @@
-#about-content {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 15%;
-    padding-right: 15%;
-    text-align: center;
+/* ---------- DEFAULT STYLE ---------- */
+#about-content .about-p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: left;
 }
-    #about-content #img-col {
-        height: 60vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
-        #img-col img {
-            max-height: 60vh;
-            max-width: 25vw;
-            float: right;
-            right: 0;
-        }
 
-    #about-content #text-col {
-        max-height: 60vh;
-        padding-left: 7%;
+    .about-p a {
+        color: #4975e2;
     }
 
-        #text-col .about-p {
-            width: 100%;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 300;
-            text-align: left;
-        }
-
-        #text-col a {
-            color: #4975e2;
-        }
-
-        #text-col a:hover {
-            text-decoration: none;
-            color: #4975e2;
-            border-bottom: 2px solid #4975e2;
-            cursor: pointer;
-        }
-
-
-
-@media (min-width: 768px) {
-    /* ------ VERTICAL ALIGN ------ */
-    .container {
-        position: relative;
+    .about-p a:hover {
+        text-decoration: none;
+        color: #4975e2;
+        border-bottom: 2px solid #4975e2;
+        cursor: pointer;
     }
 
-    .container .element {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
 
-    .valign-outer-about {
-        display: table;
-        position: absolute;
-        height: 100%;
+/* ---------- LANDSCAPE ORIENTATION ---------- */
+@media (orientation: landscape) {
+    .center-flex-container {
+        display: -webkit-flex;
+        display: flex;
+        height: 100vh;
         width: 100%;
     }
 
-    .valign-inner-about {
-        display: table-cell;
-        vertical-align: middle;
+    .center-flex-item {
+        margin: auto;
+    }
+
+    .text-flex-container {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .text-flex-item {
+        width: 100%;
+    }
+
+    #about-content img {
+        max-width: 30vw;
+        padding-right: 7%;
+        float: left;
+    }
+
+    #about-content p {
+        font-size: 1.4vw;
     }
 }
 
-@media (min-width: 1200px) {
-  #about-content {
-    max-width: 900;
-  }
-  #about-wrapper p {
-    font-size: 18px;
-  }
-  #img-col img {
-    height: 450px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  #about-wrapper p {
-    font-size: 1.4vw;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  #about-wrapper p {
-    font-size: 1.5vw;
-  }
-}
-
-@media (max-width: 767px) {
+@media (min-width: 1200px) and (orientation: landscape) {
     #about-content {
-        padding: 7vh 1vw;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) and (orientation: landscape) {
+    #about-content {
+        padding-left: 17.5%;
+        padding-right: 17.5%;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    #about-content img {
+        max-width: 35vw;
     }
 
-    #about-content #img-col {
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 6vh;
+    #about-content {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
-    #img-col img {
-        width: 40vw;
+    #about-content p {
+        font-size: 1.85vw;
+    }
+}
+
+
+/* ---------- PORTRAIT ORIENTATION ---------- */
+@media (orientation: portrait) {
+    #about-content img {
+        display: block;
+        width: 45vw;
         height: auto;
         max-height: none;
         max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5vh;
         float: none;
     }
 
-    #about-content #text-col p {
+    #about-content .about-p {
         text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    #about-content {
+        padding: 10vh 10vw;
+        padding-bottom: 5vh;
+    }
+    
+    #about-content .about-p {
+        font-size: 2.5vw;
+    }
+}
+
+/* image and text become column format rather than row */
+@media (max-width: 767px) and (orientation: portrait) {
+    #about-content {
+        padding: 7vh 5vw;
+    }
+
+    #about-content .about-p {
         font-size: 3.6vw;
     }
 }
