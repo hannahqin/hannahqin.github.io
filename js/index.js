@@ -8,7 +8,7 @@ $(document).ready(function() {
                  "value": 60,
                "density": {
                     "enable": true,
-                    "value_area": 1200
+                    "value_area": 800
                 }
             },
 
@@ -24,48 +24,36 @@ $(document).ready(function() {
                 },
                 "polygon": {
                     "nb_sides": 3
-                },
-                "image": {
-                    "src": "img/github.svg",
-                    "width": 100,
-                    "height": 100
                 }
             },
 
             "opacity": {
-                "value": 0.65,
+                "value": 0.5,
                 "random": false,
                 "anim": {
-                    "enable": false,
-                    "speed": .5,
-                    "opacity_min": 0.1,
-                    "sync": false
+                    "enable": false
                 }
             },
 
             "size": {
                 "value": 0,
-                "random": true,
+                "random": false,
                 "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
+                    "enable": false
                 }
             },
 
             "line_linked": {
                 "enable": true,
                 "distance": 200,
-                // "color": "#4975e2",
                 "color": "#666",
-                "opacity": 0.6,
+                "opacity": 0.5,
                 "width": 0.5
             },
 
             "move": {
                 "enable": true,
-                "speed": 3.2,
+                "speed": 2.5,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -84,23 +72,12 @@ $(document).ready(function() {
 
             "events": {
                 "onhover": {
-                    "enable": true,
-                    "mode": "repulse"
+                    "enable": false
                 },
                 "onclick": {
                     "enable": false
                 },
                 "resize": true
-            },
-
-            "modes": {
-                "repulse": {
-                    "distance": 57,
-                    "duration": 0.4
-                },
-                "push": {
-                    "particles_nb": 4
-                },
             }
         },
 
