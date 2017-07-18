@@ -7,7 +7,7 @@
     z-index: 1000;
 }
     .header {
-        margin-top: 30px;
+        margin-top: 25px;
         margin-bottom: 5px;
         margin-left: 35px;
         font-family: 'Montserrat', sans-serif;
@@ -42,11 +42,11 @@
     }
 
 .section {
-    padding-top: 200px;
+    padding-top: 170px;
 }
 
 .grid {
-    padding: 200px 50px 100px 20px;
+    padding: 170px 50px 100px 20px;
     max-width: 1500px;
     margin: 0 auto;
     list-style: none;
@@ -133,49 +133,10 @@
                 color: #4975e2;
             }
 
-#software-development {
-    min-height: 100vh;
-    max-width: 1125px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-    #software-development .proj {
-        display: inline-block;
-        vertical-align: top;
-        margin: 15px 50px;
-        width: 450px;
-        font-family: 'Montserrat', sans-serif;
-        text-align: left;
-    }
-
-    #software-development .proj h1 {
-        font-weight: 400;
-        letter-spacing: 1px;
-        color: #9fa0a5;
-    }
-
-    #software-development .proj p {
-        font-weight: 300;
-        font-size: 18px;
-        letter-spacing: -0.5px;
-    }
-
 @media screen and (max-width: 31.5em) {
     .grid li {
         width: 100%;
         min-width: 300px;
-    }
-
-    #software-development {
-        width: 100vw;
-        text-align: center;
-    }
-
-    #software-development .proj {
-        width: 95vw;
-        margin: 0 0;
-        padding: 10px 10px;
     }
 }
 
