@@ -1,7 +1,7 @@
 #about {
   width: 100vw;
   min-height: 100vh;
-  background: #f8f8f8;
+  background: #fafafa;
 }
 
 /* ---------- DEFAULT STYLE ---------- */
@@ -9,6 +9,7 @@
     font-family: 'Raleway', sans-serif;
     line-height: 1.6em;
     text-align: left;
+    margin-bottom: 15px;
 }
 
     .about-p a {
