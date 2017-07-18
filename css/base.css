@@ -26,6 +26,7 @@ body {
 
 /* ------ NAVIGATION BAR ------ */
 #navbar-top  {
+    position: fixed;
     padding-top: 30px;
     padding-right: 5px;
     height: 70px;
@@ -50,6 +51,7 @@ body {
         background-color: transparent;
         border-bottom: 2px solid #4975e2;
     }
+
 .navbar-header .navbar-toggle {
     margin-right: 8px;
     margin-top: 5px;
