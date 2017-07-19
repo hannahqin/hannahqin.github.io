@@ -1,0 +1,24 @@
+.page-content {
+    width: 100vw;
+    position: relative;
+}
+
+.content-left {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    padding-top: 50px;
+}
+
+    .content-left img {
+        width: 100%;
+    }
+
+.top-bar {
+    position: fixed;
+    width: 60%;
+    height: 60px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+

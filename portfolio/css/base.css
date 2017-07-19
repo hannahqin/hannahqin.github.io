@@ -1,0 +1,76 @@
+.content-right {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8f8;
+    position: fixed;
+    left: 60%;
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+.description {
+    margin: auto;
+    padding: 0 65px;
+}
+
+    .description h1 {
+        margin-top: 0;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 1px;
+        color: #4975e2;
+    }
+
+    .description h2 {
+        margin: 10px 0 20px;
+        max-width: 95%;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+    .description p {
+        font-size: 14px;
+        line-height: 20px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+.project-nav {
+    position: fixed;
+    bottom: 0;
+    width: inherit;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .project-nav a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #4975e2;
+    }
+
+        .project-nav a:hover {
+            text-decoration: none;
+            color: #0c51ff;
+            cursor: pointer;
+        }
+
+.back {
+    position: fixed;
+    margin: 20px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #4975e2;
+}
+
+    .back:hover {
+        text-decoration: none;
+        color: #174dd6;
+    }
+
+    .back:visited {
+        text-decoration: none;
+    }

@@ -1,5 +1,5 @@
 /* ------ HEADER / NAVIGATION ------ */
-#header-wrapper {
+.header-wrapper {
     position: fixed;
     width: 100vw;
     padding-bottom: 25px;
@@ -41,6 +41,8 @@
         font-weight: 400;
     }
 
+
+/* ------ PORTFOLIO GRID ------ */
 .section {
     padding-top: 170px;
 }
