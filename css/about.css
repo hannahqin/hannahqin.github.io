@@ -23,6 +23,10 @@
         cursor: pointer;
     }
 
+#about-content .connect .about-p {
+    margin: 0;
+}
+
 
 /* ---------- LANDSCAPE ORIENTATION ---------- */
 @media (orientation: landscape) {

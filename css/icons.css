@@ -1,0 +1,62 @@
+.connect a,
+.connect a:hover,
+.connect a:visited,
+.connect a:active {
+    text-decoration: none;
+}
+
+.connect span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+span.website {
+    background-image: url("../images/icons/website.svg");
+}
+
+    span.website:hover {
+        background-image: url("../images/icons/website-selected.svg");
+    }
+
+span.facebook {
+    background-image: url("../images/icons/facebook.svg");
+}
+
+    span.facebook:hover {
+        background-image: url("../images/icons/facebook-selected.svg");
+    }
+
+span.instagram {
+    background-image: url("../images/icons/instagram.svg");
+}
+
+    span.instagram:hover {
+        background-image: url("../images/icons/instagram-selected.svg");
+    }
+
+span.twitter {
+    background-image: url("../images/icons/twitter.svg");
+}
+
+    span.twitter:hover {
+        background-image: url("../images/icons/twitter-selected.svg");
+    }
+
+span.linkedin {
+    background-image: url("../images/icons/linkedin.svg");
+}
+
+    span.linkedin:hover {
+        background-image: url("../images/icons/linkedin-selected.svg");
+    }
+
+span.email {
+    background-image: url("../images/icons/email.svg");
+}
+
+    span.email:hover {
+        background-image: url("../images/icons/email-selected.svg");
+    }
