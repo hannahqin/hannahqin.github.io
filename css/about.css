@@ -5,26 +5,32 @@
 }
 
 /* ---------- DEFAULT STYLE ---------- */
-#about-content .about-p {
+.about-body .about-p {
     font-family: 'Raleway', sans-serif;
     line-height: 1.6em;
     text-align: left;
     margin-bottom: 15px;
 }
 
-    .about-p a {
+    .about-body .about-p a {
         color: #4975e2;
     }
 
-    .about-p a:hover {
+    .about-body .about-p a:hover {
         text-decoration: none;
         color: #4975e2;
         border-bottom: 2px solid #4975e2;
         cursor: pointer;
     }
 
-#about-content .connect .about-p {
-    margin: 0;
+#about-content h3 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+#about-content .connect h3 {
+    margin-bottom: 5px;
 }
 
 
@@ -61,8 +67,8 @@
         float: left;
     }
 
-    #about-content p {
-        font-size: 1.15vw;
+    .about-body p {
+        font-size: 1.1vw;
     }
 }
 
@@ -73,8 +79,8 @@
         padding-right: 22%;
     }
 
-    #about-content p {
-        font-size: 1.2vw;
+    .about-body p {
+        font-size: 1.05vw;
     }
 }
 
@@ -98,7 +104,7 @@
         padding-right: 8%;
     }
 
-    #about-content p {
+    .about-body p {
         font-size: 1.7vw;
     }
 }
@@ -118,8 +124,12 @@
         float: none;
     }
 
-    #about-content .about-p {
-        text-align: center;
+    .about-body .about-p {
+        text-align: left;
+    }
+
+    .about-body {
+        margin-bottom: 30px;
     }
 }
 
@@ -129,7 +139,7 @@
         padding-bottom: 5vh;
     }
     
-    #about-content .about-p {
+    .about-body .about-p {
         font-size: 2.5vw;
     }
 }
@@ -140,7 +150,7 @@
         padding: 7vh 5vw;
     }
 
-    #about-content .about-p {
+    .about-body .about-p {
         font-size: 3.6vw;
     }
 }
