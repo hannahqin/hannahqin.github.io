@@ -1,0 +1,75 @@
+body.modal-open {
+    overflow: hidden;
+}
+
+#modal-gallery {
+    display: none;
+    position: fixed;
+    z-index: 3000;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+/* Modal Content */
+#modal-gallery .gallery-slides {
+    position: relative;
+    background-color: transparent;
+    padding: 0 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+    .gallery-slides .slide {
+        display: none;
+        position: relative;
+    }
+        .gallery-slides .slide img {
+            max-width: 90%;
+            max-height: 90vh;
+        }
+
+    .gallery-slides .prev,
+    .gallery-slides .next {
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+        color: white;
+        font-weight: bold;
+        font-size: 35px;
+        transition: 0.5s ease;
+    }
+
+    .gallery-slides .prev {
+        left: 0;
+    }
+
+    .gallery-slides .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .gallery-slides .prev:hover,
+    .gallery-slides .next:hover {
+        color: gray;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+
+/* Close Button */
+#modal-gallery .close-button {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+    #modal-gallery .close-button:hover,
+    #modal-gallery .close-button:focus {
+        color: gray;
+        text-decoration: none;
+        cursor: pointer;
+    }

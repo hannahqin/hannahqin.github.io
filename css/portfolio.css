@@ -73,6 +73,10 @@
         overflow: hidden;
     }
 
+    .grid figure:hover {
+        cursor: pointer;
+    }
+
         .grid figure img {
             width: 100%;
             display: block;
@@ -130,4 +134,41 @@
         min-width: 300px;
     }
 }
+
+
+/* UNDER CONSTRUCTION MODAL */
+#construction-modal {
+    display: flex;
+}
+    #construction-modal .modal-dialog {
+        margin: auto;
+    }
+
+    #construction-modal .modal-content {
+        border: none;
+        border-radius: 3px;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #construction-modal .modal-body {
+        padding-bottom: 20px;
+    }
+
+    #construction-modal .modal-content h2 {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        color: #4975e2;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
+
+    #construction-modal .modal-content p {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+
+
 

@@ -6,6 +6,10 @@ $(".subheader a").click(function() {
 $(document).ready(function() {
     smoothScroll.init();
     $(document).on("scroll", onScroll);
+
+    $(window).on('load',function(){
+        $('#construction-modal').modal('show');
+    });
 });
 
 function onScroll(event){
@@ -24,5 +28,3 @@ function onScroll(event){
         }
     });
 }
-
-
