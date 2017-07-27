@@ -7,8 +7,8 @@ $(".subheader .design").on('click', function() {
         ease: "swing"
     };
 
-    $("#art").hide("slide", slideOptions, 400, function() {
-        $("#graphic-design").show("slide", slideOptions);
+    $("#art").hide("slide", slideOptions, 500, function() {
+        $("#graphic-design").show("slide", slideOptions, 500);
     });
 });
 
@@ -21,8 +21,8 @@ $(".subheader .art").on('click', function() {
         ease: "swing"
     };
 
-    $("#graphic-design").hide("slide", slideOptions, 400, function() {
-        $("#art").show("slide", slideOptions);
+    $("#graphic-design").hide("slide", slideOptions, 500, function() {
+        $("#art").show("slide", slideOptions, 500);
     });
 });
 
