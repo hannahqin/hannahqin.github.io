@@ -12,6 +12,7 @@
     <link rel="icon" href="images/icons/favicon.ico" />
 
     <!-- css -->
+    <link rel="stylesheet" href="css/swipebox.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/image-gallery.css">
@@ -56,12 +57,8 @@
 
     <div class="header-wrapper">
         <h1 class="header">PORTFOLIO</h1>
-        <h2 class="subheader">
-            <a data-scroll href="#graphic-design" class="design active">+ GRAPHIC DESIGN</a>
-        </h2>
-        <h2 class="subheader">
-            <a data-scroll href="#art" class="art">+ DRAWING &amp; PAINTING</a>
-        </h2>
+        <h2 class="subheader"><a data-scroll href="#graphic-design" class="design active">+ GRAPHIC DESIGN</a></h2>
+        <h2 class="subheader"><a data-scroll href="#art" class="art">+ DRAWING &amp; PAINTING</a></h2>
     </div>
 
     <ul id="graphic-design" class="grid section">
@@ -157,148 +154,100 @@
 
     <ul id="art" class="grid section">
         <li>
-            <figure onclick="openModal(); showSlide(0)">
-                <img src="images/art/icons/fish.jpg" alt="img01">
-                <figcaption>
-                    <h3>Westslope Cutthroat Trout</h3>
-                    <span>Oil on canvas</span>
-                </figcaption>
-            </figure>
+            <a class="swipebox" href="images/art/full-size/fish.jpg" title="Westslope Cutthroat Trout">
+                <figure>
+                    <img src="images/art/icons/fish.jpg" alt="img01">
+                    <figcaption>
+                        <h3>Westslope Cutthroat Trout</h3>
+                        <span>Oil on canvas</span>
+                    </figcaption>
+                </figure>
+            </a>
         </li>
         <li>
-            <figure onclick="openModal(); showSlide(1)">
-                <img src="images/art/icons/half-dome.jpg" alt="img01">
-                <figcaption>
-                    <h3>Half Dome</h3>
-                    <span>Oil on canvas</span>
-                </figcaption>
-            </figure>
+            <a class="swipebox" href="images/art/full-size/half-dome.jpg" title="Half Dome">
+                <figure>
+                    <img src="images/art/icons/half-dome.jpg" alt="img01">
+                    <figcaption>
+                        <h3>Half Dome</h3>
+                        <span>Oil on canvas</span>
+                    </figcaption>
+                </figure>
+            </a>
         </li>
         <li>
-            <figure onclick="openModal(); showSlide(2)">
-                <img src="images/art/icons/self-portrait.jpg" alt="img01">
-                <figcaption>
-                    <h3>Self-Portrait</h3>
-                    <span>Oil on canvas</span>
-                </figcaption>
-            </figure>
+            <a class="swipebox" href="images/art/full-size/self-portrait.jpg" title="Self-Portrait">
+                <figure>
+                    <img src="images/art/icons/self-portrait.jpg" alt="img01">
+                    <figcaption>
+                        <h3>Self-Portrait</h3>
+                        <span>Oil on canvas</span>
+                    </figcaption>
+                </figure>
+            </a>
         </li>
         <li>
-            <figure onclick="openModal(); showSlide(3)">
-                <img src="images/art/icons/bust.jpg" alt="img01">
-                <figcaption>
-                    <h3>Apollo</h3>
-                    <span>Graphite</span>
-                </figcaption>
-            </figure>
+            <a class="swipebox" href="images/art/full-size/bust.jpg" title="Apollo">
+                <figure>
+                    <img src="images/art/icons/bust.jpg" alt="img01">
+                    <figcaption>
+                        <h3>Apollo</h3>
+                        <span>Graphite</span>
+                    </figcaption>
+                </figure>
+            </a>
         </li>
         <li>
-            <figure onclick="openModal(); showSlide(4)">
-                <img src="images/art/icons/dogs.jpg" alt="img01">
-                <figcaption>
-                    <h3>Sophie and Holly</h3>
-                    <span>Oil on canvas</span>
-                </figcaption>
-            </figure>
+            <a class="swipebox" href="images/art/full-size/dogs.jpg" title="Sophie and Holly">
+                <figure>
+                    <img src="images/art/icons/dogs.jpg" alt="img01">
+                    <figcaption>
+                        <h3>Sophie and Holly</h3>
+                        <span>Oil on canvas</span>
+                    </figcaption>
+                </figure>
+            </a>
         </li>
         <li>
-            <figure onclick="openModal(); showSlide(5)">
-                <img src="images/art/icons/drifting.jpg" alt="img01">
-                <figcaption>
-                    <h3>Drifting</h3>
-                    <span>Soft pastel</span>
-                </figcaption>
-            </figure>
+            <a class="swipebox" href="images/art/full-size/drifting.jpg" title="Drifting">
+                <figure>
+                    <img src="images/art/icons/drifting.jpg" alt="img01">
+                    <figcaption>
+                        <h3>Drifting</h3>
+                        <span>Soft pastel</span>
+                    </figcaption>
+                </figure>
+            </a>
         </li>
         <li>
-            <figure onclick="openModal(); showSlide(6)">
-                <img src="images/art/icons/penguins.jpg" alt="img01">
-                <figcaption>
-                    <h3>Penguins</h3>
-                    <span>Soft pastel</span>
-                </figcaption>
-            </figure>
+            <a class="swipebox" href="images/art/full-size/penguins.jpg" title="Penguins">
+                <figure>
+                    <img src="images/art/icons/penguins.jpg" alt="img01">
+                    <figcaption>
+                        <h3>Penguins</h3>
+                        <span>Soft pastel</span>
+                    </figcaption>
+                </figure>
+            </a>
         </li>
         <li>
-            <figure onclick="openModal(); showSlide(7)">
-                <img src="images/art/icons/tree.jpg" alt="img01">
-                <figcaption>
-                    <h3>The Lone Tree</h3>
-                    <span>Soft pastel</span>
-                </figcaption>
-            </figure>
+            <a class="swipebox" href="images/art/full-size/tree.jpg" title="The Lone Tree">
+                <figure>
+                    <img src="images/art/icons/tree.jpg" alt="img01">
+                    <figcaption>
+                        <h3>The Lone Tree</h3>
+                        <span>Soft pastel</span>
+                    </figcaption>
+                </figure>
+            </a>
         </li>
     </ul>
 
-
-    <!-- IMAGE MODAL GALLERY -->
-    <div id="modal-gallery" class="modal">
-        <span class="close-button" onclick="closeModal()">&times;</span>
-        <div class="gallery-slides">
-            <div class="slide">
-                <img src="images/art/full-size/fish.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/half-dome.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/self-portrait.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/bust.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/dogs.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/drifting.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/penguins.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/tree.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- UNDER CONSTRUCTION MODAL -->
-    <div id="construction-modal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h2>ATTENTION</h2>
-                </div>
-                <div class="modal-body">
-                    <p>This page is still under construction. You're free to look around, but be sure come back at the end of the summer to see the finished product!</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
     <footer>
-        <script src="js/portfolio.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/swipebox.min.js"></script>
+        <script src="js/portfolio2.js"></script>
         <script src="js/image-gallery.js"></script>
     </footer>
 </body>

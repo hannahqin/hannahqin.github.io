@@ -1,30 +1,31 @@
-$(".subheader a").click(function() {
-    $(".active").removeClass("active");  
+$(".subheader .design").on('click', function() {
+    if ($(this).hasClass('active')) {
+        return;
+    }
+
+    $(".subheader .art").removeClass("active");  
     $(this).addClass("active");
+    $("#art").fadeOut(400, function() {
+        $("#graphic-design").fadeIn('slow');
+    });
+});
+
+$(".subheader .art").on('click', function() {
+    if ($(this).hasClass('active')) {
+        return;
+    }
+
+    $(".subheader .design").removeClass("active");
+    $(this).addClass("active");
+    $("#graphic-design").fadeOut(400, function() {
+        $("#art").fadeIn('slow');
+    });
 });
 
 $(document).ready(function() {
-    smoothScroll.init();
-    $(document).on("scroll", onScroll);
+    $("#art").hide();
 
     $(window).on('load',function(){
         $('#construction-modal').modal('show');
     });
 });
-
-function onScroll(event){
-    var scrollPosition = $(document).scrollTop();
-    $('.subheader a').each(function () {
-        var currentLink = $(this);
-        var refElement = $(currentLink.attr("href"));
-
-        if (refElement.position().top <= scrollPosition && 
-            refElement.position().top + refElement.height() > scrollPosition) {
-            $('.subheader a').removeClass("active");
-            currentLink.addClass("active");
-        }
-        else {
-            currentLink.removeClass("active");
-        }
-    });
-}
