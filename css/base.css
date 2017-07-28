@@ -29,7 +29,7 @@ body {
 #navbar-top  {
     position: fixed;
     padding-top: 30px;
-    padding-right: 5px;
+    padding-right: 25px;
     height: 70px;
     color: black;
     font-family: 'Montserrat', sans-serif;
@@ -56,16 +56,18 @@ body {
     }
 
 .navbar-header .navbar-toggle {
-    margin-right: 8px;
-    margin-top: 5px;
+    margin: 0;
 }
+
 .navbar-header .navbar-toggle .icon-bar {
     background-color: black;
 }
 
-@media (max-width: 768px) {
+/* collapsed hamburger menu */
+@media (max-width: 767px) {
     #navbar-top {
-        padding-top: 10px;
+        padding-top: 4%;
+        padding-right: 6%;
     }
 
     #navTabs {
@@ -74,7 +76,22 @@ body {
 
     #navTabs li a {
         text-align: right;
-        margin-right: 18px;
+        margin-right: 7%;
         padding: 3px 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    #navTabs li:last-child a {
+        margin-right: 0;
+    }
+}
+
+
+/* more padding for larger screens */
+@media (min-width: 1500px) {
+    #navbar-top {
+        padding-top: 50px;
+        padding-right: 20px;
     }
 }

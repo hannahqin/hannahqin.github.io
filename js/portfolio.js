@@ -1,31 +1,37 @@
 $(".subheader .design").on('click', function() {
-    if ($(this).hasClass('active')) {
-        return;
-    }
-
     $(".subheader .art").removeClass("active");  
     $(this).addClass("active");
-    $("#art").fadeOut(400, function() {
-        $("#graphic-design").fadeIn('slow');
+
+    var slideOptions = {
+        duration: 500,
+        direction: "down",
+        ease: "swing"
+    };
+
+    $("#art").hide("slide", slideOptions, function() {
+        $("#graphic-design").show("slide", slideOptions);
     });
 });
 
 $(".subheader .art").on('click', function() {
-    if ($(this).hasClass('active')) {
-        return;
-    }
-
-    $(".subheader .design").removeClass("active");
+    $(".subheader .design").removeClass("active");  
     $(this).addClass("active");
-    $("#graphic-design").fadeOut(400, function() {
-        $("#art").fadeIn('slow');
+
+    var slideOptions = {
+        duration: 500,
+        direction: "down",
+        ease: "swing"
+    };
+
+    $("#graphic-design").hide("slide", slideOptions, function() {
+        $("#art").show("slide", slideOptions);
     });
 });
 
 $(document).ready(function() {
     $("#art").hide();
-
     $(window).on('load',function(){
         $('#construction-modal').modal('show');
     });
+    //$('.swipebox').swipebox();
 });

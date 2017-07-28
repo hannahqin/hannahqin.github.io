@@ -1,160 +1,239 @@
 /* ------ HEADER / NAVIGATION ------ */
+/* Universal Style */
 .header-wrapper {
+    padding-bottom: 25px;
     position: fixed;
     width: 100vw;
     max-width: 100%;
-    padding-bottom: 25px;
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 1000;
 }
     .header {
-        margin-top: 25px;
-        margin-bottom: 5px;
-        margin-left: 35px;
+        font-size: 50px;
+        margin: 2.2% 4% 5px;
+
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         letter-spacing: 2px;
-        font-size: 50px;
         color: #4975e2;
     }
 
     .subheader {
-        margin-top: 0px;
-        margin-bottom: 2.5px;
-        margin-left: 45px;
+        font-size: 20px;
+        margin: 0 5.5% 2.5px;
+
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
         letter-spacing: 1px;
-        font-size: 20px;
     }
 
     .subheader a {
         color: black;
-
     }
 
     .subheader a:link {
         text-decoration: none;
     }
 
-    .subheader a:hover, .subheader a:active, .subheader a.active {
+    .subheader a:hover, 
+    .subheader a:active, 
+    .subheader a.active {
         color: #4975e2;
         font-weight: 400;
     }
 
+@media (min-width: 1400px) {
+    .header {
+        font-size: 55px;
+    }
+
+    .subheader {
+        font-size: 25px;
+    }
+}
+
+
+/* adjust for when the nav bar un-collapses */
+@media (min-width: 768px) and (max-width: 849px) {
+    .header-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .header {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        font-size: 35px;
+        margin-top: 4.5%;
+        margin-left: 6%;
+    }
+
+    .subheader {
+        font-size: 20px;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 424px) {
+    .header-wrapper {
+        padding-bottom: 18px;
+    }
+
+    .header {
+        font-size: 32px;
+        margin-top: 5.5%;
+    }
+
+    .subheader {
+        font-size: 15px;
+    }
+}
+
 
 /* ------ PORTFOLIO GRID ------ */
 .section {
-    padding-top: 170px;
+    padding-top: 16%;
+    width: 100%;
 }
 
 .grid {
-    padding: 170px 50px 100px;
+    width: 90%;
     max-width: 1500px;
+    padding: 0 50px 100px;
     margin: 0 auto;
     list-style: none;
     text-align: center;
 }
 
-    .grid li {
+    .grid .grid-square {
         display: inline-block;
         text-align: left;
         position: relative;
-    }
-
-    .grid figure {
-        margin: 0;
-        position: relative;
-        border: 7px solid #252f47;
-        overflow: hidden;
-    }
-
-    .grid figure:hover {
-        cursor: pointer;
-    }
-
-        .grid figure img {
-            width: 100%;
-            display: block;
-            position: relative;
-            transition: transform 0.4s;
-        }
-
-        .grid figure:hover img {
-            transform: translateY(-50px);
-        }
-
-        .grid figcaption {
-            position: absolute;
-            top: auto;
-            bottom: 0;
-            left: 0;
-            height: 100px;
-            width: 100%;
-            padding: 15px 20px;
-
-            opacity: 0;
-            background: #252f47;
-            color: #4975e2;
-            font-family: 'Raleway', sans-serif;
-            text-align: center;
-
-            transform: translateY(100%);
-            transition: transform 0.4s, opacity 0.1s 0.3s;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .grid figure:hover figcaption {
-            opacity: 1;
-            transform: translateY(0px);
-            transition: transform 0.4s, opacity 0.1s;
-        }
-
-            .grid figcaption h3 {
-                font-size: 18px;
-                margin: 0 0 5px;
-                color: white;
-                line-height: 1.2em;
-            }
-
-            .grid figcaption span {
-                font-size: 15px;
-            }
-
-@media (min-width: 1600px) {
-    .grid li {
-        width: 400px;
-        height: 400px;
-        margin: 30px;
-    }
-}
-
-@media (max-width: 1599px) {
-    .grid {
-        padding-top: 200px;
-    }
-
-    .grid li {
-        width: 350px;
-        height: 350px;
-        margin: 25px;
-    }
-}
-
-@media (max-width: 1339px) {
-    .grid li {
-        width: 300px;
-        height: 300px;
+        width: 28%;
         margin: 20px;
     }
+
+@media (max-width: 1499px) {
+    .grid {
+        width: 95%;
+    }
+
+    .grid .grid-square {
+        margin: 15px;
+    }
+}
+
+@media (max-width: 849px) {
+    .grid {
+        width: 90%;
+        padding: 0 0 60px;
+    }
+
+    .grid .grid-square {
+        width: 40%;
+    }
+}
+
+/* adjust for when the nav bar un-collapses */
+@media (min-width: 768px) and (max-width: 849px) {
+    .section {
+        padding-top: 240px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding-top: 170px;
+    }
+
+    .grid {
+        width: 100%;
+        padding: 0 0 30px;
+    }
+
+    .grid .grid-square {
+        width: 75%;
+        margin: 0 0 2.8em;
+    }
+}
+
+@media (max-width: 424px) {
+    .section {
+        padding-top: 135px;
+    }
 }
 
 
 
-/* UNDER CONSTRUCTION MODAL */
+/* ------ GRID SQUARE CONTENTS ------ */
+.grid-square figure {
+    margin: 0;
+    position: relative;
+    border: 7px solid #252f47;
+    overflow: hidden;
+}
+
+.grid-square figure:hover {
+    cursor: pointer;
+}
+
+    .grid-square figure img {
+        width: 100%;
+        display: block;
+        position: relative;
+        transition: transform 0.4s;
+    }
+
+    .grid-square figure:hover img {
+        transform: translateY(-50px);
+    }
+
+    .grid-square figcaption {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        padding: 15px 20px;
+
+        opacity: 0;
+        background: #252f47;
+        color: #4975e2;
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+
+        transform: translateY(100%);
+        transition: transform 0.4s, opacity 0.1s 0.3s;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .grid-square figure:hover figcaption {
+        opacity: 1;
+        transform: translateY(0px);
+        transition: transform 0.4s, opacity 0.1s;
+    }
+
+        .grid-square figcaption h3 {
+            font-size: 18px;
+            margin: 0 0 5px;
+            color: white;
+            line-height: 1.2em;
+        }
+
+        .grid-square figcaption span {
+            font-size: 15px;
+        }
+
+
+
+/* ------ UNDER CONSTRUCTION MODAL ------ */
 #construction-modal {
     display: flex;
 }
@@ -186,7 +265,3 @@
         margin: auto;
         margin-bottom: 10px;
     }
-
-
-
-
