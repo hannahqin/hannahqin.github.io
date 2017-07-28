@@ -56,11 +56,11 @@
 /* adjust for when the nav bar un-collapses */
 @media (min-width: 768px) and (max-width: 849px) {
     .header-wrapper {
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
 
     .header {
-        margin-top: 10%;
+        margin-top: 100px;
     }
 }
 
@@ -95,7 +95,7 @@
 
 /* ------ PORTFOLIO GRID ------ */
 .section {
-    padding-top: 16%;
+    padding-top: 200px;
     width: 100%;
 }
 
@@ -116,6 +116,12 @@
         margin: 20px;
     }
 
+@media (min-width: 1400px) {
+    .section {
+        padding-top: 250px;
+    }
+}
+
 @media (max-width: 1499px) {
     .grid {
         width: 95%;
@@ -127,6 +133,10 @@
 }
 
 @media (max-width: 849px) {
+    .section {
+        padding-top: 175px;
+    }
+
     .grid {
         width: 90%;
         padding: 0 0 60px;
@@ -140,7 +150,7 @@
 /* adjust for when the nav bar un-collapses */
 @media (min-width: 768px) and (max-width: 849px) {
     .section {
-        padding-top: 240px;
+        padding-top: 260px;
     }
 }
 
