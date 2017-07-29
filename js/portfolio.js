@@ -30,8 +30,5 @@ $(".subheader .art").on('click', function() {
 
 $(document).ready(function() {
     $("#art").hide();
-    $(window).on('load',function(){
-        $('#construction-modal').modal('show');
-    });
     //$('.swipebox').swipebox();
 });
