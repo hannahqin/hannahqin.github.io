@@ -26,3 +26,50 @@
     background-color: rgba(255, 255, 255, 0.8);
 }
 
+.magazine-spread .full-spread-portrait {
+    display: none;
+}
+
+.magazine-spread .full-spread-landscape {
+    display: block;
+}
+
+@media (orientation: portrait) {
+    .page-content section {
+        position: relative;
+    }
+
+    .content-left {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 60px;
+    }
+
+    .content-right {
+        padding-top: 120px;
+    }
+
+    .top-bar {
+        background-color: rgba(248, 248, 248, 0.8);
+        top: 0;
+        width: 100%;
+    }
+
+    .project-nav {
+        background-color: rgba(248, 248, 248, 0.8);
+    }
+
+    .magazine-spread .full-spread-portrait {
+        display: block;
+        padding-top: 60px;
+        width: 100%;
+    }
+
+    .magazine-spread .full-spread-landscape {
+        display: none;
+    }
+
+    .magazine-spread .content-right {
+        padding-top: 100px;
+    }
+}
