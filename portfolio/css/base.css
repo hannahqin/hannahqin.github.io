@@ -361,5 +361,41 @@ body {
         background-color: rgba(248, 248, 248, 0.8);
         left: 0;
     }
+
+    @media (max-width: 599px) {
+        .project-nav,
+        .back {
+            padding: 15px 20px;
+        }
+    }
+
+    @media (max-width: 490px) {
+        .page-content .back {
+            height: 50px;
+        }
+
+        .project-nav .prev,
+        .project-nav .next,
+        .back {
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 380px) {
+        .page-content .back {
+            height: 35px;
+        }
+
+        .project-nav,
+        .back {
+            padding: 10px 15px;
+        }
+
+        .project-nav .prev,
+        .project-nav .next,
+        .back {
+            font-size: 11px;
+        }
+    }
 }
 
