@@ -36,6 +36,14 @@
 
 /* ---------- LANDSCAPE ORIENTATION ---------- */
 @media (orientation: landscape) {
+    img.me-portrait {
+        display: none;
+    }
+
+    img.me-landscape {
+        display: block;
+    }
+
     .center-flex-container {
         display: -webkit-flex;
         display: flex;
@@ -111,16 +119,14 @@
 
 /* ---------- PORTRAIT ORIENTATION ---------- */
 @media (orientation: portrait) {
-    #about-content img {
+    img.me-portrait {
         display: block;
-        width: 45%;
-        height: auto;
-        max-height: none;
-        max-width: none;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5vh;
-        float: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    img.me-landscape {
+        display: none;
     }
 
     .about-body .about-p {
@@ -134,7 +140,7 @@
 
 @media (min-width: 768px) and (orientation: portrait) {
     #about-content {
-        padding: 10vh 10vw;
+        padding: 10% 10%;
         padding-bottom: 5vh;
     }
     
@@ -146,7 +152,7 @@
 /* image and text become column format rather than row */
 @media (max-width: 767px) and (orientation: portrait) {
     #about-content {
-        padding: 7vh 5vw;
+        padding: 7% 5%;
     }
 
     .about-body .about-p {
