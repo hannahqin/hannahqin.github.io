@@ -87,3 +87,25 @@ body.modal-open {
     height: 30px;
 }
 
+@media (max-width: 767px) {
+    .icon-prev,
+    .icon-next {
+        width: 20px;
+        height: 20px;
+    }
+
+    .gallery-slides .prev,
+    .gallery-slides .next {
+        margin-top: -10px;
+    }
+
+    #modal-gallery .gallery-slides {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 499px) {
+    .gallery-slides .slide img {
+        max-width: 85%;
+    }
+}
