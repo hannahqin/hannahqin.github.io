@@ -12,6 +12,7 @@
     <link rel="icon" href="images/icons/favicon.ico" />
 
     <!-- css -->
+    <link rel="stylesheet" href="css/slideout.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/image-gallery.css">
@@ -29,262 +30,270 @@
 </head>
 
 <body>
-    <!-- navigation -->
-    <nav class="navbar navbar-fixed-top" id="navbar-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="small-navbar navbar-toggle collapsed" data-toggle="collapse" 
-                data-target="#topFixedNavbar1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-          
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse small-navbar" id="topFixedNavbar1">
-                <ul class="nav navbar-nav pull-right" id="navTabs">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#" class="active">PORTFOLIO</a></li>
-                    <li><a href="https://500px.com/hannahqin" target="_blank">PHOTOGRAPHY</a></li>
-                    <li><a href="files/HannahQin_Resume.pdf" target="_blank">RESUME</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+    <!-- hidden navigation for mobile -->
+    <nav id="hidden-menu">
+        <ul>
+            <li><a class="tab-link" href="index.html">HOME</a></li>
+            <li><a class="tab-link active" href="#">PORTFOLIO</a></li>
+            <li><a class="tab-link" href="https://500px.com/hannahqin" target="_blank">PHOTOGRAPHY</a></li>
+            <li><a class="tab-link" href="files/HannahQin_Resume.pdf" target="_blank">RESUME</a></li>
+        </ul>
     </nav>
+    
+    <!-- fixed elements - manually translated -->
+    <div class="fixed-elements">
+        <!-- navigation -->
+        <nav class="navbar navbar-fixed-top" id="navbar-top">
+            <ul class="nav navbar-nav pull-right" id="navTabs">
+                <li><a class="tab-link" href="index.html">HOME</a></li>
+                <li><a class="tab-link active" href="#">PORTFOLIO</a></li>
+                <li><a class="tab-link" href="https://500px.com/hannahqin" target="_blank">PHOTOGRAPHY</a></li>
+                <li><a class="tab-link" href="files/HannahQin_Resume.pdf" target="_blank">RESUME</a></li>
+            </ul>
+        </nav>
 
-    <div class="header-wrapper">
-        <h1 class="header">PORTFOLIO</h1>
-        <h2 class="subheader">
-            <a href="#" class="design active">+ GRAPHIC DESIGN</a>
-        </h2>
-        <h2 class="subheader">
-            <a href="#" class="art">+ DRAWING &amp; PAINTING</a>
-        </h2>
+        <!-- fixed header -->
+        <div class="header-wrapper">
+            <h1 class="header">PORTFOLIO</h1>
+            <h2 class="subheader">
+                <a href="#" class="design active">+ GRAPHIC DESIGN</a>
+            </h2>
+            <h2 class="subheader">
+                <a href="#" class="art">+ DRAWING &amp; PAINTING</a>
+            </h2>
+        </div>
+
+        <!-- burger menu button -->
+        <img class="burger" src="images/icons/burger.svg" />
     </div>
 
-    <div id="graphic-design" class="section">
-        <ul class="grid">
-            <li class="grid-square">
-                <a href="portfolio/biogas.html">
-                    <figure>
-                        <img src="images/design/icons/biogas.jpg" alt="Biogas International Logo">
-                        <figcaption>
-                            <h3>Biogas International</h3>
-                            <span>Logo</span>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li class="grid-square">
-                <a href="portfolio/bmes.html">
-                    <figure>
-                        <img src="images/design/icons/bmes.jpg" alt="BMES Logo">
-                        <figcaption>
-                            <h3>Biomedical Engineering Society (BMES)</h3>
-                            <span>Logo</span>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li class="grid-square">
-                <a href="portfolio/alphabet.html">
-                    <figure>
-                        <img src="images/design/icons/alphabet.jpg" alt="Alphabet Poster">
-                        <figcaption>
-                            <h3>Alphabet of High Fashion</h3>
-                            <span>Graphic Design Project</span>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li class="grid-square">
-                <a href="portfolio/gratitude.html">
-                    <figure>
-                        <img src="images/design/icons/gratitude.jpg" alt="Gratitude Poster">
-                        <figcaption>
-                            <h3>Gratitude Poster</h3>
-                            <span>Graphic Design Project</span>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li class="grid-square">
-                <a href="portfolio/infographic.html">
-                    <figure>
-                        <img src="images/design/icons/daiquiri_infographic.jpg" alt="Infographic">
-                        <figcaption>
-                            <h3>Strawberry Daiquiri Infographic</h3>
-                            <span>Graphic Design Project</span>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li class="grid-square">
-                <a href="portfolio/startover.html">
-                    <figure>
-                        <img src="images/design/icons/mentality_issue1_startover.jpg" alt="If I Could Start Over">
-                        <figcaption>
-                            <h3>"If I Could Start Over"</h3>
-                            <span>Magazine Spread</span>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li class="grid-square">
-                <a href="portfolio/studentgroups.html">
-                    <figure>
-                        <img src="images/design/icons/mentality_issue2_studentorgs.jpg" alt="Mental Health Student Organizations">
-                        <figcaption>
-                            <h3>"Mental Health Student Organizations"</h3>
-                            <span>Magazine Spread</span>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-            <li class="grid-square">
-                <a href="portfolio/campusresources.html">
-                    <figure>
-                        <img src="images/design/icons/mentality_issue2_campusresources.jpg" alt="Campus Resources">
-                        <figcaption>
-                            <h3>"Campus Resources"</h3>
-                            <span>Magazine Spread</span>
-                        </figcaption>
-                    </figure>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <!-- main page content -->
+    <main id="page-content">
+        <!-- design portfolio -->
+        <div id="graphic-design" class="section">
+            <ul class="grid">
+                <li class="grid-square">
+                    <a href="portfolio/biogas.html">
+                        <figure>
+                            <img src="images/design/icons/biogas.jpg" alt="Biogas International Logo">
+                            <figcaption>
+                                <h3>Biogas International</h3>
+                                <span>Logo</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="grid-square">
+                    <a href="portfolio/bmes.html">
+                        <figure>
+                            <img src="images/design/icons/bmes.jpg" alt="BMES Logo">
+                            <figcaption>
+                                <h3>Biomedical Engineering Society (BMES)</h3>
+                                <span>Logo</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="grid-square">
+                    <a href="portfolio/alphabet.html">
+                        <figure>
+                            <img src="images/design/icons/alphabet.jpg" alt="Alphabet Poster">
+                            <figcaption>
+                                <h3>Alphabet of High Fashion</h3>
+                                <span>Graphic Design Project</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="grid-square">
+                    <a href="portfolio/gratitude.html">
+                        <figure>
+                            <img src="images/design/icons/gratitude.jpg" alt="Gratitude Poster">
+                            <figcaption>
+                                <h3>Gratitude Poster</h3>
+                                <span>Graphic Design Project</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="grid-square">
+                    <a href="portfolio/infographic.html">
+                        <figure>
+                            <img src="images/design/icons/daiquiri_infographic.jpg" alt="Infographic">
+                            <figcaption>
+                                <h3>Strawberry Daiquiri Infographic</h3>
+                                <span>Graphic Design Project</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="grid-square">
+                    <a href="portfolio/startover.html">
+                        <figure>
+                            <img src="images/design/icons/mentality_issue1_startover.jpg" alt="If I Could Start Over">
+                            <figcaption>
+                                <h3>"If I Could Start Over"</h3>
+                                <span>Magazine Spread</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="grid-square">
+                    <a href="portfolio/studentgroups.html">
+                        <figure>
+                            <img src="images/design/icons/mentality_issue2_studentorgs.jpg" alt="Mental Health Student Organizations">
+                            <figcaption>
+                                <h3>"Mental Health Student Organizations"</h3>
+                                <span>Magazine Spread</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="grid-square">
+                    <a href="portfolio/campusresources.html">
+                        <figure>
+                            <img src="images/design/icons/mentality_issue2_campusresources.jpg" alt="Campus Resources">
+                            <figcaption>
+                                <h3>"Campus Resources"</h3>
+                                <span>Magazine Spread</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-    <div id="art" class="section">
-        <ul class="grid">
-            <li class="grid-square">
-                <figure onclick="openModal(); showSlide(0)">
-                    <img src="images/art/icons/fish.jpg" alt="img01">
-                    <figcaption>
-                        <h3>Westslope Cutthroat Trout</h3>
-                        <span>Oil on canvas</span>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="grid-square">
-                <figure onclick="openModal(); showSlide(1)">
-                    <img src="images/art/icons/half-dome.jpg" alt="img01">
-                    <figcaption>
-                        <h3>Half Dome</h3>
-                        <span>Oil on canvas</span>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="grid-square">
-                <figure onclick="openModal(); showSlide(2)">
-                    <img src="images/art/icons/self-portrait.jpg" alt="img01">
-                    <figcaption>
-                        <h3>Self-Portrait</h3>
-                        <span>Oil on canvas</span>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="grid-square">
-                <figure onclick="openModal(); showSlide(3)">
-                    <img src="images/art/icons/bust.jpg" alt="img01">
-                    <figcaption>
-                        <h3>Apollo</h3>
-                        <span>Graphite</span>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="grid-square">
-                <figure onclick="openModal(); showSlide(4)">
-                    <img src="images/art/icons/dogs.jpg" alt="img01">
-                    <figcaption>
-                        <h3>Sophie and Holly</h3>
-                        <span>Oil on canvas</span>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="grid-square">
-                <figure onclick="openModal(); showSlide(5)">
-                    <img src="images/art/icons/drifting.jpg" alt="img01">
-                    <figcaption>
-                        <h3>Drifting</h3>
-                        <span>Soft pastel</span>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="grid-square">
-                <figure onclick="openModal(); showSlide(6)">
-                    <img src="images/art/icons/penguins.jpg" alt="img01">
-                    <figcaption>
-                        <h3>Penguins</h3>
-                        <span>Soft pastel</span>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="grid-square">
-                <figure onclick="openModal(); showSlide(7)">
-                    <img src="images/art/icons/tree.jpg" alt="img01">
-                    <figcaption>
-                        <h3>The Lone Tree</h3>
-                        <span>Soft pastel</span>
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
-    </div>
+        <!-- art portfolio -->
+        <div id="art" class="section">
+            <ul class="grid">
+                <li class="grid-square">
+                    <figure onclick="openModal(); showSlide(0)">
+                        <img src="images/art/icons/fish.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Westslope Cutthroat Trout</h3>
+                            <span>Oil on canvas</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="grid-square">
+                    <figure onclick="openModal(); showSlide(1)">
+                        <img src="images/art/icons/half-dome.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Half Dome</h3>
+                            <span>Oil on canvas</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="grid-square">
+                    <figure onclick="openModal(); showSlide(2)">
+                        <img src="images/art/icons/self-portrait.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Self-Portrait</h3>
+                            <span>Oil on canvas</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="grid-square">
+                    <figure onclick="openModal(); showSlide(3)">
+                        <img src="images/art/icons/bust.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Apollo</h3>
+                            <span>Graphite</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="grid-square">
+                    <figure onclick="openModal(); showSlide(4)">
+                        <img src="images/art/icons/dogs.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Sophie and Holly</h3>
+                            <span>Oil on canvas</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="grid-square">
+                    <figure onclick="openModal(); showSlide(5)">
+                        <img src="images/art/icons/drifting.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Drifting</h3>
+                            <span>Soft pastel</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="grid-square">
+                    <figure onclick="openModal(); showSlide(6)">
+                        <img src="images/art/icons/penguins.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Penguins</h3>
+                            <span>Soft pastel</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="grid-square">
+                    <figure onclick="openModal(); showSlide(7)">
+                        <img src="images/art/icons/tree.jpg" alt="img01">
+                        <figcaption>
+                            <h3>The Lone Tree</h3>
+                            <span>Soft pastel</span>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
 
 
-    <!-- IMAGE MODAL GALLERY -->
-    <div id="modal-gallery" class="modal">
-        <span class="close-button" onclick="closeModal()">&times;</span>
-        <div class="gallery-slides">
-            <div class="slide">
-                <img src="images/art/full-size/fish.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/half-dome.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/self-portrait.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/bust.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/dogs.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/drifting.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/penguins.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
-            </div>
-            <div class="slide">
-                <img src="images/art/full-size/tree.jpg">
-                <a class="prev" onclick="prevSlide()">&#10094;</a>
-                <a class="next" onclick="nextSlide()">&#10095;</a>
+        <!-- IMAGE MODAL GALLERY -->
+        <div id="modal-gallery" class="modal">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <div class="gallery-slides">
+                <div class="slide">
+                    <img src="images/art/full-size/fish.jpg">
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+                <div class="slide">
+                    <img src="images/art/full-size/half-dome.jpg">
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+                <div class="slide">
+                    <img src="images/art/full-size/self-portrait.jpg">
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+                <div class="slide">
+                    <img src="images/art/full-size/bust.jpg">
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+                <div class="slide">
+                    <img src="images/art/full-size/dogs.jpg">
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+                <div class="slide">
+                    <img src="images/art/full-size/drifting.jpg">
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+                <div class="slide">
+                    <img src="images/art/full-size/penguins.jpg">
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
+                <div class="slide">
+                    <img src="images/art/full-size/tree.jpg">
+                    <a class="prev" onclick="prevSlide()">&#10094;</a>
+                    <a class="next" onclick="nextSlide()">&#10095;</a>
+                </div>
             </div>
         </div>
-    </div>
-
+    </main>
 
     <footer>
-        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/plugins/jquery-ui.min.js"></script>
+        <script src="js/plugins/slideout.min.js"></script>
+        <script src="js/slideout-custom.js"></script>
         <script src="js/portfolio.js"></script>
         <script src="js/image-gallery.js"></script>
     </footer>

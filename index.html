@@ -12,6 +12,7 @@
     <link rel="icon" href="images/icons/favicon.ico" />
 
     <!-- css -->
+    <link rel="stylesheet" href="css/slideout.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/about.css">
@@ -30,92 +31,98 @@
 </head>
 
 <body>
-    <div id="home">
+    <!-- hidden navigation for mobile -->
+    <nav id="hidden-menu">
+        <ul>
+            <li><a data-scroll class="tab-link active" href="#home">HOME</a></li>
+            <li><a class="tab-link" href="portfolio.html">PORTFOLIO</a></li>
+            <li><a class="tab-link" href="https://500px.com/hannahqin" target="_blank">PHOTOGRAPHY</a></li>
+            <li><a class="tab-link" href="files/HannahQin_Resume.pdf" target="_blank">RESUME</a></li>
+        </ul>
+    </nav>
+
+    <!-- fixed elements - manually translated -->
+    <div class="fixed-elements">
+        <img class="burger" src="images/icons/burger.svg" />
+    </div>
+
+    <!-- main page content -->
+    <main id="page-content">
         <!-- navigation -->
         <nav class="navbar navbar-fixed-top" id="navbar-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="small-navbar navbar-toggle collapsed" data-toggle="collapse" 
-                    data-target="#topFixedNavbar1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-              
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse small-navbar" id="topFixedNavbar1">
-                    <ul class="nav navbar-nav pull-right" id="navTabs">
-                        <li><a data-scroll href="#home" class="active">HOME</a></li>
-                        <li><a href="portfolio.html">PORTFOLIO</a></li>
-                        <li><a href="https://500px.com/hannahqin" target="_blank">PHOTOGRAPHY</a></li>
-                        <li><a href="files/HannahQin_Resume.pdf" target="_blank">RESUME</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
+            <ul class="nav navbar-nav pull-right" id="navTabs">
+                <li><a data-scroll href="#home" class="active">HOME</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="https://500px.com/hannahqin" target="_blank">PHOTOGRAPHY</a></li>
+                <li><a href="files/HannahQin_Resume.pdf" target="_blank">RESUME</a></li>
+            </ul>
         </nav>
 
-        <!-- header container -->
-        <div id="header-wrapper" class="valign-outer">
-            <div id="header" class="valign-inner">
-                <img src="images/header.png" alt="Hannah Qin" />
-                <p>
-                    + DESIGNER<br>
-                    + DEVELOPER<br>
-                    + PHOTOGRAPHER
-                </p>
-
-                <a data-scroll id="learnmore" class="btn" href="#about" role="button">GET TO KNOW ME</a>
-            </div><!-- /.header-box -->
-        </div>
-    </div><!-- /#home-->
-
-    <!-- ABOUT ME PAGE -->
-    <div id="about" class="center-flex-container">
-        <img class="me-portrait" src="images/me_wide.jpg" alt="Me" />
-        <div class="center-flex-item center-flex-container" id="about-content">
-            <img class="me-landscape center-flex-item" src="images/me.jpg" alt="me.jpg" />
-            <div class="center-flex-item text-flex-container">
-                <div class="about-body">
-                    <h3>ABOUT ME</h3>
-                    <p class="about-p text-flex-item">
-                        I am a senior at the University of Michigan studying Computer Science and French.
-                        Currently, I am working at 
-                        <a href="https://www.roblox.com" target="_blank">ROBLOX</a> 
-                        as a Web Engineering Intern. Previously, I studied abroad at 
-                        <a href="https://www.univ-paris-diderot.fr/" target="_blank">Université Paris-Diderot</a>, 
-                        where I fully immersed myself in French language and culture by enrolling in courses 
-                        alongside French university students.
+        <!-- welcome section -->
+        <div id="home">
+            <!-- header container -->
+            <div id="header-wrapper" class="valign-outer">
+                <div id="header" class="valign-inner">
+                    <img src="images/header.png" alt="Hannah Qin" />
+                    <p>
+                        + DESIGNER<br>
+                        + DEVELOPER<br>
+                        + PHOTOGRAPHER
                     </p>
-                    <p class="about-p text-flex-item">
-                        At school, I am the Vice President of 
-                        <a href="https://hkn.eecs.umich.edu" target="_blank">Eta Kappa Nu</a>, 
-                        the EECS honor society. I am also a designer for 
-                        <a href="https://www.mentalitymagazine.org" target="_blank">Mentality Magazine</a>, 
-                        and dabble in freelance design on the side. Outside of school, you can find me practicing 
-                        aerial silks, photography, and oil painting.
-                    </p>
-                </div>
-                <div class="connect text-flex-item">
-                    <h3>CONNECT WITH ME</h3>
-                    <a href="mailto:hqin@umich.edu">
-                        <span class="email"></span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/hannahqin" target="_blank">
-                        <span class="linkedin"></span>
-                    </a>
-                    <a href="https://www.instagram.com/hannersqin" target="_blank">
-                        <span class="instagram"></span>
-                    </a>
+
+                    <a data-scroll id="learnmore" class="btn" href="#about" role="button">GET TO KNOW ME</a>
                 </div>
             </div>
         </div>
-    </div><!-- /#about -->
+
+        <!-- about me section -->
+        <div id="about" class="center-flex-container">
+            <img class="me-portrait" src="images/me_wide.jpg" alt="Me" />
+            <div class="center-flex-item center-flex-container" id="about-content">
+                <img class="me-landscape center-flex-item" src="images/me.jpg" alt="me.jpg" />
+                <div class="center-flex-item text-flex-container">
+                    <div class="about-body">
+                        <h3>ABOUT ME</h3>
+                        <p class="about-p text-flex-item">
+                            I am a senior at the University of Michigan studying Computer Science and French.
+                            Currently, I am working at 
+                            <a href="https://www.roblox.com" target="_blank">ROBLOX</a> 
+                            as a Web Engineering Intern. Previously, I studied abroad at 
+                            <a href="https://www.univ-paris-diderot.fr/" target="_blank">Université Paris-Diderot</a>, 
+                            where I fully immersed myself in French language and culture by enrolling in courses 
+                            alongside French university students.
+                        </p>
+                        <p class="about-p text-flex-item">
+                            At school, I am the Vice President of 
+                            <a href="https://hkn.eecs.umich.edu" target="_blank">Eta Kappa Nu</a>, 
+                            the EECS honor society. I am also a designer for 
+                            <a href="https://www.mentalitymagazine.org" target="_blank">Mentality Magazine</a>, 
+                            and dabble in freelance design on the side. Outside of school, you can find me practicing 
+                            aerial silks, photography, and oil painting.
+                        </p>
+                    </div>
+                    <div class="connect text-flex-item">
+                        <h3>CONNECT WITH ME</h3>
+                        <a href="mailto:hqin@umich.edu">
+                            <span class="email"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hannahqin" target="_blank">
+                            <span class="linkedin"></span>
+                        </a>
+                        <a href="https://www.instagram.com/hannersqin" target="_blank">
+                            <span class="instagram"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /#about -->
+    </main>
 
     <footer>
         <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/plugins/smooth-scroll.min.js"></script>
+        <script src="js/plugins/slideout.min.js"></script>
+        <script src="js/slideout-custom.js"></script>
         <script src="js/index.js"></script>
     </footer>
 </body>
