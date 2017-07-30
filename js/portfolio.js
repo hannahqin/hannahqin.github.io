@@ -31,4 +31,22 @@ $(".subheader .art").on('click', function() {
 $(document).ready(function() {
     $("#art").hide();
     //$('.swipebox').swipebox();
+
+
+    // GOOGLE ANALYTICS
+    $("a.design").on('click', function() {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'portfolio',
+            eventAction: 'DesignSectionLink'
+        });
+    });
+
+    $("a.art").on('click', function() {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'portfolio',
+            eventAction: 'ArtSectionLink'
+        });
+    });
 });

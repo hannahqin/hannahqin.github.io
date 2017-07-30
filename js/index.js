@@ -83,4 +83,30 @@ $(document).ready(function() {
 
         "retina_detect": true
     });
+
+
+    // Google Analytics
+    $("#learnmore").on('click', function() {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'home',
+            eventAction: 'LearnMoreButton'
+        });
+    });
+
+    $("#linkedin").on('click', function() {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'home',
+            eventAction: 'LinkedIn'
+        });
+    });
+
+    $("#instagram").on('click', function() {
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'home',
+            eventAction: 'Instagram'
+        });
+    });
 });
