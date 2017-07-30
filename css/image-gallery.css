@@ -32,10 +32,7 @@ body.modal-open {
     .gallery-slides .next {
         position: absolute;
         top: 50%;
-        margin-top: -25px;
-        color: white;
-        font-weight: bold;
-        font-size: 35px;
+        margin-top: -15px;
         transition: 0.5s ease;
     }
 
@@ -58,18 +55,35 @@ body.modal-open {
 
 /* Close Button */
 #modal-gallery .close-button {
-    color: white;
     position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
+    top: 15px;
+    right: 15px;
     transition: 0.5s ease;
 }
 
     #modal-gallery .close-button:hover,
     #modal-gallery .close-button:focus {
-        color: gray;
         text-decoration: none;
         cursor: pointer;
     }
+
+
+/* Iconography */
+.icon-close {
+    background-image: url("../images/icons/nav/close.svg");
+    width: 20px;
+    height: 20px;
+}
+
+.icon-prev {
+    background-image: url("../images/icons/nav/prev.svg");
+    width: 30px;
+    height: 30px;
+}
+
+.icon-next {
+    background-image: url("../images/icons/nav/next.svg");
+    width: 30px;
+    height: 30px;
+}
+
