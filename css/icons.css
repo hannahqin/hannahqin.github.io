@@ -6,6 +6,8 @@
 }
 
 .connect span {
+    background-image: url("../images/icons/icons.svg");
+    background-size: 60px 180px;
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -13,50 +15,50 @@
     margin-top: 5px;
 }
 
-span.website {
-    background-image: url("../images/icons/website.svg");
-}
-
-    span.website:hover {
-        background-image: url("../images/icons/website-selected.svg");
-    }
-
-span.facebook {
-    background-image: url("../images/icons/facebook.svg");
-}
-
-    span.facebook:hover {
-        background-image: url("../images/icons/facebook-selected.svg");
-    }
-
 span.instagram {
-    background-image: url("../images/icons/instagram.svg");
+    background-position: 0 0;
 }
 
     span.instagram:hover {
-        background-image: url("../images/icons/instagram-selected.svg");
+        background-position: -30px 0px;
+    }
+
+span.facebook {
+    background-position: 0 -30px;
+}
+
+    span.facebook:hover {
+        background-position: -30px -30px;
     }
 
 span.twitter {
-    background-image: url("../images/icons/twitter.svg");
+    background-position: 0 -60px;
 }
 
     span.twitter:hover {
-        background-image: url("../images/icons/twitter-selected.svg");
+        background-position: -30px -60px;
+    }
+
+span.website {
+    background-position: 0 -90px;
+}
+
+    span.website:hover {
+        background-position: -30px -90px;
     }
 
 span.linkedin {
-    background-image: url("../images/icons/linkedin.svg");
+    background-position: 0px -120px;
 }
 
     span.linkedin:hover {
-        background-image: url("../images/icons/linkedin-selected.svg");
+        background-position: -30px -120px;
     }
 
 span.email {
-    background-image: url("../images/icons/email.svg");
+    background-position: 0px -150px;
 }
 
     span.email:hover {
-        background-image: url("../images/icons/email-selected.svg");
+        background-position: -30px -150px;
     }
