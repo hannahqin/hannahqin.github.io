@@ -293,7 +293,7 @@ body {
 
         .project-nav a:hover {
             text-decoration: none;
-            color: #008cff;
+            color: #2454c9;
             cursor: pointer;
         }
 
@@ -312,7 +312,7 @@ body {
 
     .back:hover {
         text-decoration: none;
-        color: #008cff;
+        color: #2454c9;
     }
 
     .back:visited {
