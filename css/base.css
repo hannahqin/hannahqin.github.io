@@ -12,19 +12,6 @@ body {
   background: #fff18c; /* Gecko Browsers */
 }
 
-/* ------ VERTICAL ALIGN ------ */
-.valign-outer {
-    display: table;
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-}
-
-.valign-inner {
-    display: table-cell;
-    vertical-align: middle;
-}
-
 /* ------ NAVIGATION BAR ------ */
 #navbar-top  {
     position: fixed;
@@ -110,13 +97,13 @@ body {
         border-bottom: 2px solid white;
     }
 
-@media (max-width: 767px) {
+@media (max-width: 999px) {
     #navbar-top {
         display: none;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     .slideout-menu {
         display: block;
     }

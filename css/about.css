@@ -140,8 +140,7 @@
 
 @media (min-width: 768px) and (orientation: portrait) {
     #about-content {
-        padding: 10% 10%;
-        padding-bottom: 5vh;
+        padding: 10% 10% 15%;
     }
     
     .about-body .about-p {
