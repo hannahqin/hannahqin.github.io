@@ -1,0 +1,54 @@
+{% extends "portfolio-layout.nunjucks" %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="static/css/poster.css">
+    <link rel="stylesheet" href="static/css/icons.css">
+{% endblock %}
+
+{% block content %}
+    <div class="page-content magazine-spread">
+        <img class="full-spread-portrait" src="static/images/design/full-size/mentality_issue2_campusresources.jpg" />
+        <section class="content-right">
+            <div class="description">
+                <div class="heading">
+                    <h1>CAMPUS RESOURCES</h1>
+                    <h2>ISSUE 2, MENTALITY MAGAZINE</h2>
+                </div>
+                <div class="about">
+                    <h3>ABOUT THE MAGAZINE</h3>
+                    <p>
+                        Mentality Magazine is a new publication at the University of Michigan dedicated to discussing mental health. By providing a platform where students can openly share their experiences with mental health and distributing copies of our magazine for free online and across campus, we hope to educate the Michigan community about mental health and combat the stigmas associated with it.
+                    </p>
+                </div>
+                <div class="connect">
+                    <h3>CONNECT WITH US</h3>
+                    <a href="http://www.mentalitymagazine.org" target="_blank">
+                        <span class="website"></span>
+                    </a>
+                    <a href="https://www.facebook.com/mentalitymagazineumich/" target="_blank">
+                        <span class="facebook"></span>
+                    </a>
+                    <a href="https://www.instagram.com/mentality_magazine_umich/" target="_blank">
+                        <span class="instagram"></span>
+                    </a>
+                </div>
+                <div class="proj-type">
+                    <h3>PROJECT TYPE</h3>
+                    <p class="tag">Magazine Spread</p>
+                </div>
+            </div>
+            <div class="project-nav">
+                <a class="prev" href="studentgroups.html">&#8592; Student Groups</a>
+            </div>
+        </section>
+        <section class="content-left">
+            <img class="border" src="static/images/design/full-size/mentality_issue2_campusresources1.jpg" />
+            <img class="border" src="static/images/design/full-size/mentality_issue2_campusresources2.jpg" />
+            <img class="full-spread-landscape" src="static/images/design/full-size/mentality_issue2_campusresources.jpg" />
+        </section>
+        <div class="top-bar">
+            <a class="back" href="portfolio.html">&#8592; Portfolio</a>
+        </div>
+    </div>
+{% endblock %}

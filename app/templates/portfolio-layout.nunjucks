@@ -1,0 +1,18 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "partials/metatags.nunjucks" %}
+    {% include "partials/google-analytics.nunjucks" %}
+    {% include "partials/plugin-links.nunjucks" %}
+
+    <title>Hannah Qin | portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/portfolio-base.css">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>

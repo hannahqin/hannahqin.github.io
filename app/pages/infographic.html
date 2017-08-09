@@ -1,0 +1,41 @@
+{% extends "portfolio-layout.nunjucks" %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="static/css/poster.css">
+{% endblock %}
+
+
+{% block content %}
+    <div class="page-content">
+        <section class="content-right">
+            <div class="description">
+                <div class="heading">
+                    <h1>STRAWBERRY DAIQUIRI INFOGRAPHIC</h1>
+                    <h2>SI 320, UNIVERSITY OF MICHIGAN</h2>
+                </div>
+                <div class="about">
+                    <h3>ABOUT THE PROJECT</h3>
+                    <p>
+                        For this project, we were given the freedom to design a mock infographic about a drink of our choosing. Content requirements included the use of 3 different headers, a map, a bar chart, a radial bar chart, and an anatomy diagram.
+                    </p>
+                </div>
+                <div class="proj-type">
+                    <h3>PROJECT TYPE</h3>
+                    <p class="tag">Class Assignment</p>
+                </div>
+            </div>
+            <div class="project-nav">
+                <a class="prev" href="gratitude.html">&#8592; Gratitude Poster</a>
+                <a class="next" href="startover.html">If I Could Start Over &#8594;</a>
+            </div>
+        </section>
+        <section class="content-left">
+            <img class="border" src="static/images/design/full-size/infographic.jpg" />
+            <img src="static/images/design/full-size/infographic2.jpg" />
+        </section>
+        <div class="top-bar">
+            <a class="back" href="portfolio.html">&#8592; Portfolio</a>
+        </div>
+    </div>
+{% endblock %}

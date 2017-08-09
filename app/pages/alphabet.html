@@ -1,0 +1,41 @@
+{% extends "portfolio-layout.nunjucks" %}
+
+
+{% block css %}
+    <link rel="stylesheet" href="static/css/poster.css">
+{% endblock %}
+
+
+{% block content %}
+    <div class="page-content">
+        <section class="content-right">
+            <div class="description">
+                <div class="heading">
+                    <h1>THE ALPHABET OF COUTURE DESIGNERS</h1>
+                    <h2>SI 320, UNIVERSITY OF MICHIGAN</h2>
+                </div>
+                <div class="about">
+                    <h3>ABOUT THE PROJECT</h3>
+                    <p>
+                        For this project, we were presented with the challenge of designing a themed English Alphabet Poster using consistent visuals, colors, and typography. Each grid element had to be composed of a capital letter, a label, and an image, and only one typeface could be used for the design. We were expected to apply our knowledge of manuscript and modular grids in designing the layout of the poster.
+                    </p>
+                </div>
+                <div class="proj-type">
+                    <h3>PROJECT TYPE</h3>
+                    <p class="tag">Class Assignment</p>
+                </div>
+            </div>
+            <div class="project-nav">
+                <a class="prev" href="bmes.html">&#8592; BMES Logo</a>
+                <a class="next" href="gratitude.html">Gratitude Poster &#8594;</a>
+            </div>
+        </section>
+        <section class="content-left">
+            <img class="border" src="static/images/design/full-size/alphabet.jpg" />
+            <img src="static/images/design/full-size/alphabet2.jpg" />
+        </section>
+        <div class="top-bar">
+            <a class="back" href="portfolio.html">&#8592; Portfolio</a>
+        </div>
+    </div>
+{% endblock %}
