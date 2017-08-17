@@ -70,9 +70,29 @@ body {
 
 
 @media (orientation: landscape) {
-    @media (min-width: 1700px) {
+    @media (min-width: 1600px) {
         .description {
             padding: 0 75px;
+        }
+        
+        .description h1 {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        
+        .description h2 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+        
+        .description h3 {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        
+        .description p {
+            font-size: 16px;
+            line-height: 25px;
         }
     }
     
