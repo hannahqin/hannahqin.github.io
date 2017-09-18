@@ -235,13 +235,13 @@
     }
 
 
-@media (min-width: 901px) {
+@media (min-width: 961px) {
     .grid-square figure:hover figcaption,
     .grid-square figure:active figcaption {
         transform: translateY(0px);
         transition: transform 0.5s;
     }
-    
+
     .grid-square figure:hover img,
     .grid-square figure:active img {
         -webkit-transform: translateY(-60px);
