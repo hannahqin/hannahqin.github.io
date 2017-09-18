@@ -36,7 +36,8 @@
     }
 
     .subheader a:hover, 
-    .subheader a:active {
+    .subheader a:active,
+    .subheader a.active {
         color: #4975e2;
         font-weight: 400;
     }
