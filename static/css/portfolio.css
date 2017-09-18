@@ -186,7 +186,8 @@
     -webkit-backface-visibility: hidden;
 }
 
-.grid-square figure:hover {
+.grid-square figure:hover,
+.grid-square figure:active {
     cursor: pointer;
 }
 
