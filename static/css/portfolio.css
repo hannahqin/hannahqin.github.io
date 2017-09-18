@@ -215,12 +215,6 @@
         justify-content: center;
     }
 
-    .grid-square figure:hover figcaption,
-    .grid-square figure:active figcaption {
-        transform: translateY(0px);
-        transition: transform 0.5s;
-    }
-
         .grid-square figcaption h3 {
             font-size: 18px;
             margin: 0 0 5px;
@@ -240,11 +234,20 @@
         transition: transform 0.5s;
     }
 
+
+@media (min-width: 901px) {
+    .grid-square figure:hover figcaption,
+    .grid-square figure:active figcaption {
+        transform: translateY(0px);
+        transition: transform 0.5s;
+    }
+    
     .grid-square figure:hover img,
     .grid-square figure:active img {
         -webkit-transform: translateY(-60px);
         transform: translateY(-60px);
     }
+}
 
 @media (min-width: 800px) {
     .grid-square figcaption {
