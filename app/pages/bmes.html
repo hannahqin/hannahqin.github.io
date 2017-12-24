@@ -1,53 +1,18 @@
 {% extends "portfolio-layout.nunjucks" %}
-
-{% block css %}
-    <link rel="stylesheet" href="static/css/logo.css">
-    <link rel="stylesheet" href="static/css/icons.css">
-{% endblock %}
-
-{% block content %}
-    <div class="page-content bmes">
-        <a class="back" href="portfolio.html">&#8592; Portfolio</a>
-        <section class="content-left">
-            <img src="static/images/design/full-size/bmes2.png" />
-        </section>
-        <section class="content-right">
-            <div class="description">
-                <div class="heading">
-                    <h1>BIOMEDICAL ENGINEERING SOCIETY</h1>
-                    <h2>UNIVERSITY OF MICHIGAN STUDENT ORGANIZATION</h2>
-                </div>
-                <div class="about">
-                    <h3>ABOUT THE ORGANIZATION</h3>
-                    <p>
-                        BMES is a student organization comprised of biomedical engineering students interested in networking with industry, peers, faculty, and alumni. They offer a variety of industry and research panels, social opportunities, and hospital service opportunities. They hope to bring greater university recognition to the Biomedical Engineering Department while creating a sense of community among the department's students.
-
-                    </p>
-                </div>
-                <div class="connect">
-                    <h3>CONNECT WITH THEM</h3>
-                    <a href="http://www.bmes.bme.umich.edu" target="_blank">
-                        <span class="website"></span>
-                    </a>
-                    <a href="https://www.facebook.com/bmesum" target="_blank">
-                        <span class="facebook"></span>
-                    </a>
-                    <a href="https://www.instagram.com/bmesum" target="_blank">
-                        <span class="instagram"></span>
-                    </a>
-                    <a href="https://www.twitter.com/bmesumich" target="_blank">
-                        <span class="twitter"></span>
-                    </a>
-                </div>
-                <div class="proj-type">
-                    <h3>PROJECT TYPE</h3>
-                    <p class="tag">Logo Design</p>
-                </div>
+    {% block img -%}
+        <div class="img-wrapper bmes"></div>
+    {%- endblock %}
+    {% block content -%}
+            <div class="section">
+                <h3>BIOMEDICAL ENGINEERING SOCIETY LOGO</h3>
+                <h4>FREELANCE DESIGN</h4>
             </div>
-            <div class="project-nav">
-                <a class="prev" href="biogas.html">&#8592; Biogas Intl Logo</a>
-                <a class="next" href="alphabet.html">Alphabet Poster &#8594;</a>
+            <div class="section">
+                <h6>ABOUT THE ORGANIZATION</h6>
+                <p>BMES is a student organization comprised of biomedical engineering students interested in networking with industry, peers, faculty, and alumni. They offer a variety of industry and research panels, social opportunities, and hospital service opportunities. They hope to bring greater university recognition to the Biomedical Engineering Department while creating a sense of community among the department's students.</p>
             </div>
-        </section>
-    </div>
-{% endblock %}
+            <div class="section">
+                <h6>MY ROLE</h6>
+                <p>Branding, Logo Design</p>
+            </div>
+    {%- endblock %}

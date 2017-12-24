@@ -1,32 +1,35 @@
-<!-- layout.nunjucks -->
 {% import 'partials/navbar.nunjucks' as navbar %}
 {% import 'partials/hidden-menu.nunjucks' as hiddenMenu %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include "partials/metatags.nunjucks" %}
-    {% include "partials/google-analytics.nunjucks" %}
-    {% include "partials/plugin-links.nunjucks" %}
+{% include "partials/metatags.nunjucks" %}
+{% include "partials/google-analytics.nunjucks" %}
+{% include "partials/plugin-links.nunjucks" %}
 
     <!-- Page Title -->
     {% block title %}{% endblock %}
-
     <!-- CSS -->
     <link rel="stylesheet" href="static/css/slideout.css">
     <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/footer.css">
     {% block css %}{% endblock %}
-
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400|Raleway" rel="stylesheet">
     {% block fonts %}{% endblock %}
 </head>
 <body>
-    {% block content %}{% endblock %}
-
+    {% block hiddenmenu %}{% endblock %}
+    <!-- main page content -->
+    <main id="page-content">
+        {% block content %}{% endblock %}
+{% include "partials/footer.nunjucks" %}
+    </main>
     <footer>
         <script src="static/js/plugins/slideout.min.js"></script>
         <script src="static/js/slideout-custom.js"></script>
+        <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+        <script src="static/js/plugins/smooth-scroll.min.js"></script>
+        <script src="static/js/base.js"></script>
         {% block js %}{% endblock %}
     </footer>
 </body>

@@ -1,18 +1,24 @@
-<!-- layout.nunjucks -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    {% include "partials/metatags.nunjucks" %}
-    {% include "partials/google-analytics.nunjucks" %}
-    {% include "partials/plugin-links.nunjucks" %}
+{% include "partials/metatags.nunjucks" %}
+{% include "partials/google-analytics.nunjucks" %}
+{% include "partials/plugin-links.nunjucks" %}
 
-    <title>Hannah Qin | portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400|Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/portfolio-base.css">
-    {% block css %}{% endblock %}
+    <title>Hannah Qin</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500|Raleway:400" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/project.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+    <script src="static/js/base.js"></script>
 </head>
 <body>
-    {% block content %}{% endblock %}
+    <main id="page-content">
+        {% block img %}{% endblock %}
+        <div class="back-bar"><a href="javascript:history.back()">&#8592; Home</a></div>
+        <div class="content-body">
+            {% block content %}{% endblock %}
+        </div>
+{% include "partials/footer.nunjucks" %}
+    </main>
 </body>
 </html>

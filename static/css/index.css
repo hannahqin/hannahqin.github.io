@@ -1,0 +1,85 @@
+/* ------- HEADER OVERRIDES -------- */
+.header h1 {
+    font-size: 45px;
+}
+
+.header h3 {
+    max-width: 500px;
+}
+
+@media (max-width: 500px) {
+    .header h1 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header h1 {
+        font-size: 40px;
+        line-height: 47px;
+    }
+}
+
+/* ------- PORTFOLIO -------- */
+#work {
+    margin: 0;
+}
+
+#col1, #col2 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.img-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+    .img-wrapper img {
+        width: 100%;
+    }
+
+    .img-wrapper .proj-label {
+        position: absolute;
+        top: 20%; left: 15%;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        opacity: 0;
+        z-index: 100;
+    }
+
+        .proj-label h3 {
+            font-size: 20px;
+        }
+
+        .proj-label h4 {
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        .proj-label h5 {
+            color: #aaa;
+        }
+
+.img-wrapper:after {
+    content: '';
+    color: white;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.img-wrapper:hover:after,
+.img-wrapper:hover .proj-label {
+    opacity: 1;
+}
+
+

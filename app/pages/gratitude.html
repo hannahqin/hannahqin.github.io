@@ -1,40 +1,18 @@
 {% extends "portfolio-layout.nunjucks" %}
-
-
-{% block css %}
-    <link rel="stylesheet" href="static/css/poster.css">
-{% endblock %}
-
-
-{% block content %}
-    <div class="page-content">
-        <section class="content-right">
-            <div class="description">
-                <div class="heading">
-                    <h1>GRATITUDE POSTER</h1>
-                    <h2>SI 320, UNIVERSITY OF MICHIGAN</h2>
-                </div>
-                <div class="about">
-                    <h3>ABOUT THE PROJECT</h3>
-                    <p>
-                        This assignment was inspired by the recent design trend of layering botanical illustrations and typography to create a sense of depth in the composition. We were instructed to selected a plant and use the symbolic meaning of the plant as its layered text. A good composition combined quality isolation, effective use of balance and movement, and readable typography.
-                    </p>
-                </div>
-                <div class="proj-type">
-                    <h3>PROJECT TYPE</h3>
-                    <p class="tag">Class Assignment</p>
-                </div>
+    {% block img -%}
+        <div class="img-wrapper gratitude"></div>
+    {%- endblock %}
+    {% block content -%}
+            <div class="section">
+                <h3>GRATITUDE POSTER</h3>
+                <h4>SI 320 (GRAPHIC DESIGN) PROJECT</h4>
             </div>
-            <div class="project-nav">
-                <a class="prev" href="alphabet.html">&#8592; Alphabet Poster</a>
-                <a class="next" href="infographic.html">Infographic Project &#8594;</a>
+            <div class="section">
+                <h6>ABOUT THE PROJECT</h6>
+                <p>This assignment was inspired by the recent design trend of layering botanical illustrations and typography to create a sense of depth in the composition. We were instructed to selected a plant and use the symbolic meaning of the plant as its layered text. A good composition combined quality isolation, effective use of balance and movement, and readable typography.</p>
             </div>
-        </section>
-        <section class="content-left">
-            <img src="static/images/design/full-size/gratitude.jpg" />
-        </section>
-        <div class="top-bar">
-            <a class="back" href="portfolio.html">&#8592; Portfolio</a>
-        </div>
-    </div>
-{% endblock %}
+            <div class="section">
+                <h6>MY ROLE</h6>
+                <p>Designer</p>
+            </div>
+    {%- endblock %}

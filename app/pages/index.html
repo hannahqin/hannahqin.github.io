@@ -1,94 +1,97 @@
 {% extends "page-layout.nunjucks" %}
 
-
-{% block title %}
+{% block title -%}
     <title>Hannah Qin</title>
 {% endblock %}
-
-
-{% block css %}
-    <link rel="stylesheet" href="static/css/home.css">
-    <link rel="stylesheet" href="static/css/about.css">
-    <link rel="stylesheet" href="static/css/icons.css">
+{% block css -%}
+    <link rel="stylesheet" href="static/css/index.css">
+{% endblock %}
+{% block fonts -%}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
 {% endblock %}
 
-
-{% block fonts %}
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
-{% endblock %}
-
-
-{% block content %}
-    <!-- hidden navigation for mobile -->
-    {{hiddenMenu.active('home')}}
-
+{% block hiddenmenu -%}
+    {{- hiddenMenu.active('about') }}
     <!-- fixed elements - manually translated -->
     <div class="fixed-elements">
         <img class="burger" src="static/images/icons/burger.svg" />
     </div>
+{% endblock %}
 
-    <!-- main page content -->
-    <main id="page-content">
-        <!-- navigation -->
-        {{navbar.active('home')}}
-
-        <!-- welcome section -->
-        <div id="home">
-            <!-- header container -->
+{% block content -%} 
+        {{- navbar.active('home') }}
+        <div id="welcome" class="top-section">
             <div class="header-wrapper">
                 <div class="header">
                     <h1>Hannah Qin</h1>
                     <h3>Designer, software developer, and photographer from Ann Arbor, MI</h3>
-                    <a data-scroll id="learnmore" class="btn" href="#about" role="button">GET TO KNOW ME</a>
                 </div>
             </div>
         </div>
-
-        <!-- about me section -->
-        <div id="about" class="center-flex-container">
-            <img class="me-portrait" src="static/images/me_wide.jpg" alt="Me" />
-            <div class="center-flex-item center-flex-container" id="about-content">
-                <img class="me-landscape center-flex-item" src="static/images/me.jpg" alt="me.jpg" />
-                <div class="center-flex-item text-flex-container">
-                    <div class="about-body">
-                        <h3>ABOUT ME</h3>
-                        <p class="about-p text-flex-item">
-                            I am a senior at the University of Michigan studying Computer Science and French.
-                            Currently, I am working at 
-                            <a href="https://www.roblox.com" target="_blank">ROBLOX</a> 
-                            as a Web Engineering Intern. Previously, I studied abroad at 
-                            <a href="https://www.univ-paris-diderot.fr/" target="_blank">Université Paris-Diderot</a>, 
-                            where I fully immersed myself in French language and culture by enrolling in courses 
-                            alongside French university students.
-                        </p>
-                        <p class="about-p text-flex-item">
-                            At school, I am the Vice President of 
-                            <a href="https://hkn.eecs.umich.edu" target="_blank">Eta Kappa Nu</a>, 
-                            the EECS honor society. I am also a designer for 
-                            <a href="https://www.mentalitymagazine.org" target="_blank">Mentality Magazine</a>, 
-                            and dabble in freelance design on the side. Outside of school, you can find me practicing 
-                            aerial silks, photography, and oil painting.
-                        </p>
-                    </div>
-                    <div class="connect text-flex-item">
-                        <h3>CONNECT WITH ME</h3>
-                        <a href="mailto:hqin@umich.edu">
-                            <span class="email"></span>
-                        </a>
-                        <a id="linkedin" href="https://www.linkedin.com/in/hannahqin" target="_blank">
-                            <span class="linkedin"></span>
-                        </a>
-                        <a id="instagram" href="https://www.instagram.com/hannersqin" target="_blank">
-                            <span class="instagram"></span>
-                        </a>
+        <div id="work" class="row">
+            <div id="col1" class="col-sm-6">
+                <div class="img-wrapper">
+                    <img src="static/images/mockups/aerialist-mockup.jpg" alt="AeriaList Mobile App" />
+                    <div class="proj-label noselect">
+                        <h3>AeriaList</h3>
+                        <h4>iOS Application Prototype</h4>
+                        <h5><i>Details coming soon!</i></h5>
                     </div>
                 </div>
+                <a href="biogas.html"><div class="img-wrapper">
+                    <img src="static/images/mockups/biogas-mockup.jpg" alt="Biogas International Logo" />
+                    <div class="proj-label noselect">
+                        <h3>Biogas International Logo</h3>
+                        <h4>Logo Design</h4>
+                    </div>
+                </div></a>
+                <a href="gratitude.html"><div class="img-wrapper">
+                    <img src="static/images/mockups/gratitude-mockup.jpg" alt="Gratitude Poster" />
+                    <div class="proj-label noselect">
+                        <h3>Gratitude Poster</h3>
+                        <h4>Graphic Design Project</h4>
+                    </div>
+                </div></a>
+                <a href="onsuccess.html"><div class="img-wrapper">
+                    <img src="static/images/mockups/on-success-mockup.jpg" alt="'On Success' Magazine Spread" />
+                    <div class="proj-label noselect">
+                        <h3>"On Success"</h3>
+                        <h4>Magazine Spread</h4>
+                    </div>
+                </div></a>
+            </div><div id="col2" class="col-sm-6">
+                <div class="img-wrapper">
+                    <img src="static/images/mockups/chores-mockup.jpg" alt="HouseKeeper Mobile App" />
+                    <div class="proj-label noselect">
+                        <h3>HouseKeeper</h3>
+                        <h4>iOS Application Prototype</h4>
+                        <h5><i>Details coming soon!</i></h5>
+                    </div>
+                </div>
+                <a href="bmes.html"><div class="img-wrapper">
+                    <img src="static/images/mockups/bmes-mockup.jpg" alt="BMES Logo" />
+                    <div class="proj-label noselect">
+                        <h3>BMES Logo</h3>
+                        <h4>Logo Design</h4>
+                    </div>
+                </div></a>
+                <a href="alphabet.html"><div class="img-wrapper">
+                    <img src="static/images/mockups/alphabet-mockup.jpg" alt="Alphabet Poster" />
+                    <div class="proj-label noselect">
+                        <h3>Alphabet of High Fashion</h3>
+                        <h4>Graphic Design Project</h4>
+                    </div>
+                </div></a>
+                <a href="startover.html"><div class="img-wrapper">
+                    <img src="static/images/mockups/startover-mockup.jpg" alt="'If I Could Start Over' Magazine Spread" />
+                    <div class="proj-label noselect">
+                        <h3>"If I Could Start Over"</h3>
+                        <h4>Magazine Spread</h4>
+                    </div>
+                </div></a>
             </div>
         </div>
-    </main>
 {% endblock %}
-{% block js %}
-    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-    <script src="static/js/plugins/smooth-scroll.min.js"></script>
-    <script src="static/js/index.js"></script>
+{%- block js -%}
+        <script src="static/js/index.js"></script>
 {% endblock %}

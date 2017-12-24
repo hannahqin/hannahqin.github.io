@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    particlesJS("welcome", 
+    particlesJS("about", 
     {
         "particles": {
             "number": {

@@ -1,0 +1,80 @@
+{% extends "page-layout.nunjucks" %}
+
+{% block title -%}
+    <title>Hannah Qin | about</title>
+{% endblock %}
+{% block css -%}
+    <link rel="stylesheet" href="static/css/about.css">
+{% endblock %}
+{% block fonts -%}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:400,500" rel="stylesheet">
+{% endblock %}
+
+{% block hiddenmenu -%}
+    {{- hiddenMenu.active('about') }}
+    <!-- fixed elements - manually translated -->
+    <div class="fixed-elements">
+        <img class="burger" src="static/images/icons/burger.svg" />
+    </div>
+{% endblock %}
+
+{% block content -%} 
+        {{- navbar.active('about') }}
+        <div id="about" class="top-section">
+            <div class="header-wrapper">
+                <div class="header">
+                    <h1>Hi, my name is Hannah.</h1>
+                    <h3>I am a senior at the University of Michigan majoring in Computer Science and French.</h3>
+                </div>
+            </div>
+        </div>
+
+        <img class="me-img" src="static/images/about.jpg" alt="Image of Me">
+
+        <div id="about-content">
+            <div class="row section">
+                <div class="section-title col-sm-3">
+                    <h4>ABOUT ME</h4>
+                </div>
+                <div class="section-body col-sm-9">
+                    <p>This past summer, I worked at Roblox as a Web Engineering Intern. Previously, I studied abroad at Université Paris-Diderot, where I fully immersed myself in French language and culture by enrolling in courses alongside French university students.</p>
+                    <p>At school, I am the Vice President of Eta Kappa Nu - Beta Epsilon, the U-M chapter of the EECS honor society. I am also a designer for Mentality Magazine, and dabble in freelance design on the side. Outside of school, you can find me practicing aerial silks, photography, and oil painting.</p>
+                </div>
+            </div>
+            <div class="row section">
+                <div class="section-title col-sm-3">
+                    <h4>SKILLS</h4>
+                </div>
+                <div class="section-body col-sm-9">
+                    <div class="row skills align-items-start">
+                        <div class="col-sm-4">
+                            <h5>DESIGN SOFTWARE</h5>
+                            <p>Sketch<br>Adobe Illustrator<br>Adobe Photoshop<br>Adobe InDesign</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5>WEB DEV</h5>
+                            <p>JavaScript/jQuery<br>AngularJS<br>HTML/CSS<br>Bootstrap</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h5>PROGRAMMING</h5>
+                            <p>Python<br>C++<br>C#<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row section">
+                <div class="section-title col-sm-3">
+                    <h4>RESUME</h4>
+                </div>
+                <div class="section-body col-sm-9">
+                    <a class="resume noselect" href="static/files/HannahQin_Resume.pdf" target="_blank">
+                        <span class="resume-label">View My Resume</span>
+                        <span class="glyphicon glyphicon-arrow-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+{%- block js -%}
+        <script src="static/js/about.js"></script>
+{% endblock %}

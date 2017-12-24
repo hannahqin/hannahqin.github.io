@@ -1,10 +1,9 @@
 {% macro active(activePage) %}
+    <!-- hidden navigation for mobile -->
     <nav id="hidden-menu">
         <ul>
             <li><a class="tab-link {%if activePage == 'home' %} active {% endif %}" href="/">HOME</a></li>
-            <li><a class="tab-link {%if activePage == 'portfolio' %} active {% endif %}" href="portfolio.html">PORTFOLIO</a></li>
-            <li><a class="tab-link" href="https://500px.com/hannahqin" target="_blank">PHOTOGRAPHY</a></li>
-            <li><a class="tab-link" href="static/files/HannahQin_Resume.pdf" target="_blank">RESUME</a></li>
+            <li><a class="tab-link {%if activePage == 'about' %} active {% endif %}" href="about.html">ABOUT</a></li>
         </ul>
     </nav>
 {% endmacro %}

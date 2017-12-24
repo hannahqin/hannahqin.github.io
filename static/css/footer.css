@@ -1,0 +1,29 @@
+/* --------- FOOTER --------- */
+.contact {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 30px;
+}
+
+.contact a {
+    margin: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #8c8c8c;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #4975e2;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .contact a {
+        margin: 15px;
+        font-size: 13px;
+    }
+}
