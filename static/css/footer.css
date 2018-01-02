@@ -8,7 +8,7 @@
 .contact a {
     margin: 25px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     color: #8c8c8c;
     text-decoration: none;
 }
@@ -24,6 +24,6 @@
 
     .contact a {
         margin: 15px;
-        font-size: 13px;
+        font-size: 12px;
     }
 }
