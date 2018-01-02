@@ -59,6 +59,18 @@
 }
 
 
+.section-body p a {
+    color: #4975e2;
+}
+
+.section-body p a:hover {
+    text-decoration: none;
+    color: #2454c9;
+    border-bottom: 2px solid #4975e2;
+    cursor: pointer;
+}
+
+
 a.resume {
     display: inline-block;
     border: 2px solid #4975e2;

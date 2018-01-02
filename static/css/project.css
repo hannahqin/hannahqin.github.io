@@ -1,3 +1,24 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.link {
+    color: #4975e2;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: #2454c9;
+    border-bottom: 2px solid #4975e2;
+    cursor: pointer;
+}
+
 #page-content {
     font-family: 'Montserrat', sans-serif;
 }
@@ -157,8 +178,58 @@
     }
 }
 
+/* -------- VIEW BUTTON -------- */
+a.view {
+    display: inline-block;
+    border: 2px solid #4975e2;
+    border-radius: 3px;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+    .view span {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        color: #4975e2;
+        vertical-align: middle;
+    }
+
+    .view .glyphicon-arrow-right {
+        margin-left: 5px;
+    }
+
+    a.view:hover {
+        background-color: #4975e2;
+    }
+
+    a.view:hover span {
+        color: white;
+        display: inline;
+    }
+
+@media (max-width: 960px) {
+    .view span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    a.view {
+        padding: 5px 12px;
+    }
+
+    .view span {
+        font-size: 14px;
+    }
+}
+
 
 /* -------- MOCKUP IMAGES -------- */
+.img-wrapper.aerialist {
+    background-image: url('../images/mockups/aerialist-mockup.jpg');
+}
 .img-wrapper.biogas {
     background-image: url('../images/mockups/biogas-mockup.jpg');
 }
