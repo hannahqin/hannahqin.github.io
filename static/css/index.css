@@ -77,8 +77,8 @@
     -webkit-transition: all 0.3s;
 }
 
-.img-wrapper:hover:after,
-.img-wrapper:hover .proj-label {
+body.hasHover .img-wrapper:hover:after,
+body.hasHover .img-wrapper:hover .proj-label {
     opacity: 1;
 }
 

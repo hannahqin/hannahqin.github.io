@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    if (!hasTouch()) {
+        document.body.className += ' hasHover';
+    }
+
     particlesJS("welcome", 
     {
         "particles": {
@@ -82,3 +86,9 @@ $(document).ready(function() {
         "retina_detect": true
     });
 });
+
+function hasTouch() {
+    return 'ontouchstart' in document.documentElement
+           || navigator.maxTouchPoints > 0
+           || navigator.msMaxTouchPoints > 0;
+}
