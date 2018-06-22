@@ -1,8 +1,8 @@
 {% extends "portfolio-layout.nunjucks" %}
-    {% block img -%}
-        <div class="img-wrapper startover"></div>
-    {%- endblock %}
     {% block content -%}
+        <div class="img-wrapper startover"></div>
+        <div class="back-bar black"><a href="javascript:history.back()">&#8592; Home</a></div>
+        <div class="content-body">
             <div class="section">
                 <h3>"If I Could Start Over"</h3>
                 <h4>Issue 1, Mentality Magazine</h4>
@@ -15,4 +15,5 @@
                 <h6>MY ROLE</h6>
                 <p>Magazine Spread Designer</p>
             </div>
+        </div>
     {%- endblock %}

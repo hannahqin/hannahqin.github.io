@@ -1,0 +1,32 @@
+{% extends "portfolio-layout.nunjucks" %}
+    {% block img -%}
+        <div class="img-wrapper trackit"></div>
+    {%- endblock %}
+    {% block content -%}
+            <div class="section">
+                <h3>trackit</h3>
+                <h4>Web app</h4>
+            </div>
+            <div class="section">
+                <h6>ABOUT TRACKIT</h6>
+                <p>Trackit is an easily digestible way for CS-LSA majors at the University of Michigan to view their progress towards graduation and plan out their class schedules accordingly. With an overview of your unfulfilled requirements, a detailed display delineating completed and in-progress requirements, and an interactive schedule planner, staying on track for graduation has never been easier.</p>
+            </div>
+            <div class="section">
+                <h6>THE PROJECT</h6>
+                <p></p>
+            </div>
+            <div class="section">
+                <h6>ROLE</h6>
+                <p>Project Manager, UI/UX Designer, and the primary developer of the trackit Schedule Planner</p>
+            </div>
+            <div class="section">
+                <h6>LANGUAGES</h6>
+                <p>HTML5/CSS3, JavaScript, JQuery, AngularJS</p>
+            </div>
+            <div class="section">
+                <a class="view noselect" href="https://chrome.google.com/webstore/detail/statslete/pefdalapbihodaphaffejfjldpphepfc?hl=en" target="_blank">
+                    <span class="view-label"></span>
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                </a>
+            </div>
+    {%- endblock %}

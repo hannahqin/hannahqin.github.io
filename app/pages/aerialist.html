@@ -1,14 +1,14 @@
 {% extends "portfolio-layout.nunjucks" %}
-    {% block img -%}
-        <div class="img-wrapper aerialist"></div>
-    {%- endblock %}
     {% block content -%}
+        <div class="img-wrapper aerialist"></div>
+        <div class="back-bar"><a href="javascript:history.back()">&#8592; Home</a></div>
+        <div class="content-body">
             <div class="section">
                 <h3>AeriaList: An iOS App Prototype</h3>
                 <h4>ENTR 390.012 (Digital Product Design Studio) Project</h4>
             </div>
             <div class="section">
-                <h6>ABOUT THE APPLICATION</h6>
+                <h6>ABOUT THE APP</h6>
                 <p>AeriaList is a user-populated digital glossary of aerial silks skills in the form of a mobile app. It is designed for people who are learning aerial silks to keep track of the steps involved in completing each skill they learn so they can easily recall how to perform complex moves. If you are unfamiliar with aerial silks, it is a circus art performance you might have seen in Cirque du Soleil where artists perform aerial acrobatics while hanging from a fabric.</p>
             </div>
             <div class="section">
@@ -21,4 +21,5 @@
                     <span class="glyphicon glyphicon-arrow-right"></span>
                 </a>
             </div>
+        </div>
     {%- endblock %}

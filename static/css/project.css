@@ -61,6 +61,14 @@
         color: rgba(255,255,255,0.6);
     }
 
+    .back-bar.black a, .back-bar.black a:visited {
+        color: black;
+    }
+
+    .back-bar.black a:hover {
+        color: rgba(0,0,0,0.6);
+    }
+
 @media(max-width: 375px) {
     .back-bar {
         padding: 12px 18px;
@@ -229,6 +237,12 @@ a.view {
 /* -------- MOCKUP IMAGES -------- */
 .img-wrapper.aerialist {
     background-image: url('../images/mockups/aerialist-mockup.jpg');
+}
+.img-wrapper.statslete {
+    background-image: url('../images/mockups/statslete-mockup.jpg');
+}
+.img-wrapper.trackit {
+    background-image: url('../images/mockups/trackit-mockup.jpg');
 }
 .img-wrapper.biogas {
     background-image: url('../images/mockups/biogas-mockup.jpg');

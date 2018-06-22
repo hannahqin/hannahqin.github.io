@@ -1,8 +1,8 @@
 {% extends "portfolio-layout.nunjucks" %}
-    {% block img -%}
-        <div class="img-wrapper gratitude"></div>
-    {%- endblock %}
     {% block content -%}
+        <div class="img-wrapper gratitude"></div>
+        <div class="back-bar black"><a href="javascript:history.back()">&#8592; Home</a></div>
+        <div class="content-body">
             <div class="section">
                 <h3>Gratitude Poster</h3>
                 <h4>SI 320 (Graphic Design) Project</h4>
@@ -11,4 +11,5 @@
                 <h6>ABOUT THE PROJECT</h6>
                 <p>This assignment was inspired by the recent design trend of layering botanical illustrations and typography to create a sense of depth in the composition. We were instructed to selected a plant and use the symbolic meaning of the plant as its layered text. A good composition combined quality isolation, effective use of balance and movement, and readable typography.</p>
             </div>
+        </div>
     {%- endblock %}
