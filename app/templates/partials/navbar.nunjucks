@@ -2,7 +2,7 @@
         <!-- navigation -->
         <nav class="navbar navbar-fixed-top width-wrapper" id="navbar-top">
             <ul class="nav navbar-nav pull-right" id="navTabs">
-                <li><a class="tab-link {%if activePage == 'home' %} active {% endif %}" href="/">HOME</a></li>
+                <li><a class="tab-link {%if activePage == 'home' %} active {% endif %}" href="/">PORTFOLIO</a></li>
                 <li><a class="tab-link {%if activePage == 'about' %} active {% endif %}" href="about.html">ABOUT</a></li>
             </ul>
         </nav>
