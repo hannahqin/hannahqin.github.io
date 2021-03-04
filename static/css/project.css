@@ -235,6 +235,9 @@ a.view {
 
 
 /* -------- MOCKUP IMAGES -------- */
+.img-wrapper.brotherhoodvotes {
+    background-image: url('../images/mockups/brotherhoodvotes-mockup.jpg');
+}
 .img-wrapper.aerialist {
     background-image: url('../images/mockups/aerialist-mockup.jpg');
 }
