@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var data = require('gulp-data');
 var nunjucksRender = require('gulp-nunjucks-render');
 
 gulp.task('nunjucks', function() {

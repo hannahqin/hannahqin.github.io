@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "nunjucks": "^3.2.3",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-nunjucks-render": "^2.2.3"
+  },
+  "name": "hannahqin.github.io",
+  "version": "1.0.0",
+  "description": "hannah's portfolio site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannahqin/hannahqin.github.io.git"
+  },
+  "author": "hannah qin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannahqin/hannahqin.github.io/issues"
+  },
+  "homepage": "https://github.com/hannahqin/hannahqin.github.io#readme"
+}
