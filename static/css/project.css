@@ -235,6 +235,18 @@ a.view {
 
 
 /* -------- MOCKUP IMAGES -------- */
+.img-wrapper.ttl {
+    background-image: url('../images/mockups/ttl-mockup.jpg');
+}
+.img-wrapper.unravelcreative {
+    background-image: url('../images/mockups/unravel-mockup.jpg');
+}
+.img-wrapper.kgsbagelchips {
+    background-image: url('../images/mockups/kgsbagelchips-mockup.jpg');
+}
+.img-wrapper.wnywomenowned {
+    background-image: url('../images/mockups/wnywomenowned-mockup.jpg');
+}
 .img-wrapper.brotherhoodvotes {
     background-image: url('../images/mockups/brotherhoodvotes-mockup.jpg');
 }
